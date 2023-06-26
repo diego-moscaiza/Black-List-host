@@ -113,13 +113,13 @@ switch(color){
 
 // FUNCIONES
 
-function sumar(a, b) { return a + b } // esta es una funcion de suma
-sumar(1,3)
+function suma(a, b) { return a + b } // esta es una funcion de suma
+suma(1,3)
 
 
 //Funcion quicksort
 
-function quicksort(lista){
+function quicksort(lista) {
     if(lista.length <= 1){
         return lista
     }
@@ -198,14 +198,14 @@ tigre.hazSonido()
 
 //En modulo.js:
 
-function restar(a, b){
+function resta(a, b){
     console.log(a - b)
 }
 
-export {restar}
+export {resta}
 
 // En index.js
 
-import {restar} from './modulo.js'
+import {resta} from './modulo.js'
 
-restar(10, 23)
+resta(10, 23)
