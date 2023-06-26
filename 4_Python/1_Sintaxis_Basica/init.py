@@ -204,12 +204,13 @@ javascript.descripcion()
 
 #Para este ejemplo de usarán dos archivos de python, uno llamado 'main' y otro 'modulo'
 
-#En modulo:
+# En modulo:
 def restar(a, b):
     print(a - b);
 
-#En main:
-
+# En main:
+"""
 import modulo
 
 modulo.restar(10, 6)
+"""
