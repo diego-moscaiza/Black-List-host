@@ -24,12 +24,12 @@ function Component({background}) {
 
 /* PRIME EXAMPLE */
 
-const nombre = "Carlos";
+const Nombre = "Carlos";
 const edad = 36;
 const Youtube = "https://youtube.com";
 
 const persona = {
-    nombre, // (It's rigth)
+    Nombre, // (It's rigth)
     edad: edad, //  (So bad, that's repeated)
     Youtube // (!worths)
 }
