@@ -25,8 +25,6 @@ body {
     background-color: black;
 }
 
-
-
 .navbar ul {
     text-align: center;
     list-style-type: none;
@@ -48,17 +46,14 @@ body {
     text-decoration: none;
 }
 
-
 .contenido {
-    padding: 25px;
-    margin: 40px;
     margin-bottom: 60px;
     align-items: center;
 }
 
 .secciones {
     margin-bottom: 20px;
-    display: flex;
+    display: grid;
     justify-content: space-between;
     padding: 30px;
     margin: 5px auto;
