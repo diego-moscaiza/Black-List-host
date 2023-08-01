@@ -15,7 +15,6 @@ body {
     font-size: 1rem;
     min-height: 100vh;
     position: relative;
-    padding-bottom: 5em;
 }
 
 .header {
@@ -31,41 +30,38 @@ body {
     background-color: rgb(111, 123, 123);
 }
 
-.navbar li {
+.navbar ul li {
     display: inline-flex;
 }
 
-.navbar li:hover {
+.navbar ul li:hover {
     background-color: rgb(60, 62, 63);
 }
 
-.navbar a {
+.navbar ul li a {
     padding: 10px;
     width: 150px;
     color: white;
     text-decoration: none;
 }
 
-.contenido {
-    margin-bottom: 60px;
+.article {
     align-items: center;
 }
 
-.secciones {
-    margin-bottom: 20px;
+.section {
     display: grid;
     justify-content: space-between;
-    padding: 30px;
-    margin: 5px auto;
-    width: 60%;
+    margin: 20px auto; 
+    width: 50%;
+    grid-template-columns: repeat(2, auto);
 }
 
-.secciones p {
+.section .contenido p {
     margin-top: 20px;
-    text-align: left;
 }
 
-.secciones img {
+.section .image img {
     margin: 10px;
     width: 150px;
     height: 150px;
@@ -74,7 +70,7 @@ body {
     align-items: right;
 }
 
-footer {
+.footer {
     width: 100%;
     color: white;
     background-color: black;
@@ -82,7 +78,54 @@ footer {
     position: absolute;
 }
 
-footer p {
+.footer p {
     padding: 20px;
     text-align: center;
 }
+
+
+
+@media (width < 290px) {
+    .article {
+        padding-bottom: 12em;
+    }
+
+    .section {
+        width: 70%;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (width >= 290px) {
+    .article {
+        padding-bottom: 8.5em;
+    }
+
+    .section {
+        width: 70%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+
+@media (width >= 550px) {
+    .article {
+        padding-bottom: 5em;
+    }
+
+    .section {
+        width: 65%;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (width >= 1300px) {
+    .article {
+        padding-bottom: 3em;
+    }
+
+    .section {
+        width: 50%;
+    }
+}
+
