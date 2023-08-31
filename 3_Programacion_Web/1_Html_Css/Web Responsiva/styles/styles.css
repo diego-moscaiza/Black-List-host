@@ -1,0 +1,104 @@
+@import url(reset.css);
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.navbar ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(111, 123, 123);
+}
+
+.navbar ul li {
+    display: inline-flex;
+}
+
+.navbar ul li:hover {
+    background-color: rgb(60, 62, 63);
+}
+
+.navbar ul li a {
+    padding: 10px;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+}
+
+.article {
+    align-items: center;
+}
+
+.section {
+    display: grid;
+    justify-content: space-between;
+    margin: 20px auto; 
+    width: 50%;
+    grid-template-columns: repeat(2, auto);
+}
+
+.section .contenido p {
+    margin-top: 20px;
+}
+
+.section .image img {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: right;
+}
+
+.footer {
+    padding: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.footer p {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media (width < 290px) {
+    .section {
+        width: 70%;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (width >= 290px) {
+    .section {
+        width: 70%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+
+@media (width >= 550px) {
+    .section {
+        width: 65%;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (width >= 1300px) {
+    .section {
+        width: 50%;
+    }
+}
+
