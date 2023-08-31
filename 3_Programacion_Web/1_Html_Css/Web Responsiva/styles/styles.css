@@ -54,8 +54,8 @@ body {
 .article__section {
     display: grid;
     justify-content: space-between;
-    margin: 20px auto; 
-    width: 55%;
+    margin: 20px auto;
+    width: clamp(50%, 90ch, 70%);
     grid-template-columns: repeat(2, auto);
 }
 
@@ -93,21 +93,18 @@ body {
 
 @media (width < 290px) {
     .article__section {
-        width: 70%;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
 
-@media (width >= 290px) {
+@media (width >=290px) {
     .article__section {
-        width: 70%;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
-@media (width >= 550px) {
+@media (width >=550px) {
     .article__section {
-        width: 65%;
         grid-template-columns: repeat(2, auto);
     }
 }
