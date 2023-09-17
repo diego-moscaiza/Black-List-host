@@ -91,20 +91,8 @@ body {
 
 /* MEDIA QUERYS */
 
-@media (width < 290px) {
-    .article__section {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
-
-@media (width >=290px) {
+@media (0px < width < 549px) {
     .article__section {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-@media (width >=550px) {
-    .article__section {
-        grid-template-columns: repeat(2, auto);
     }
 }
