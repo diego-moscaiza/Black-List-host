@@ -1,0 +1,71 @@
+@import "reset.css";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+}
+
+.header-tittle {
+    /*AÑADIENDO MARGEN HACIA LA IZQUIERDA*/
+    margin-left: auto;
+    /*FIJANDO LA POSICION DE ORDEN COMO EL TERCERO*/
+    order: 3;
+    font-weight: bold;
+    color: #edf0f1;
+}
+
+.nav{
+    /*FIJANDO LA POSICION DE ORDEN COMO EL PRIMERO*/
+    order: 1;
+}
+
+.nav-list {
+    list-style: none;   
+}
+
+/* LA POSICION DE ORDEN COMO EL PRIMERO*/
+.nav-list:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-link {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link:hover {
+    color: #0088a9;
+}
+
+.header-button {
+    /*AÑADIENDO MARGEN HACIA LA IZQUIERDA*/
+    margin-left: 20px;
+    /*FIJANDO LA POSICION DE ORDEN COMO EL SEGUNDO*/
+    order: 2;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.header-button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
