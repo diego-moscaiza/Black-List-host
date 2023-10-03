@@ -18,29 +18,29 @@ li, a, button {
     background-color: #24252A;
 }
 
-.header-tittle {
+.header__tittle {
     font-weight: bold;
     color: #edf0f1;
 }
 
-.nav-list {
+.nav__list {
     list-style: none;   
 }
 
-.nav-item {
+.nav__item {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav-link {
+.nav__link {
     transition: all 0.3s ease 0s;
 }
 
-.nav-link:hover {
+.nav__link:hover {
     color: #0088a9;
 }
 
-.header-button {
+.header__button {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
@@ -48,6 +48,6 @@ li, a, button {
     transition: all 0.3s ease 0s;
 }
 
-.header-button:hover {
+.header__button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
