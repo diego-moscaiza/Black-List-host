@@ -3,16 +3,23 @@ Algoritmo sin_titulo
 	Leer numero1
 	numero1 <- TRUNC(numero1)
 	cad <- ""
+	
 	Si numero1 > 0 Entonces
 		Mientras numero1 > 0 Hacer
 			NumeroPar <- numero1 MOD 2 = 0
 			Si numero1=0 Entonces
-				Escribir ""
+				cad <- "0" + cad
 			SiNo
-				Escribir ""
+				cad <- "1" + cad
 			Fin Si
+			numero1 <- TRUNC(numero1 / 2)
 		Fin Mientras
+		Escribir "El numero en binario es: ", cad
 	SiNo
-		Escribir ""
+		Si numero1=0 Entonces
+			Escribir "El numero es: ", numero1 
+		SiNo
+			Escribir "No se convierten numeros negativos"
+		Fin Si
 	Fin Si
 FinAlgoritmo
