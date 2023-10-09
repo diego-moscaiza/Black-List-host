@@ -1,4 +1,5 @@
-Algoritmo sin_titulo
+// EL ALGORITMO DEMUESTRA EL VALOR DE UN NUMERO EN BINARIO, Y FILTRA NUMEROS CON DECIMALES
+Algoritmo Decimal_Binario
 	Escribir "Ingresa un numero: "
 	Leer numero1
 	numero1 <- TRUNC(numero1)

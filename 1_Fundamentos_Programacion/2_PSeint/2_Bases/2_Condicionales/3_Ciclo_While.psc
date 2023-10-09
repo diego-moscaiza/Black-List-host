@@ -1,14 +1,14 @@
 Algoritmo CicloWhile_MientrasQue
 	nombre <- ""
-	numero <- 0
+	numero1 <- 0
 	i <- 0
 	
 	Escribir "Ingresa tu numero: "
 
 	Leer nombre
-	Leer numero
+	Leer numero1
 	
-	Mientras i < numero Hacer
+	Mientras i < numero1 Hacer
 		Escribir nombre
 		i <- i + 1
 	Fin Mientras
