@@ -223,6 +223,141 @@ React.Fragment
 
 /* ----- 8.-  TERNARY OPERATOR ------- */
 
+// El operador ternario es una alternatica añ tipo IF ELSE
+
+// EJEMPLO 1:
+
+const coche = {
+    marca : "Tesla",
+    modelo: "Cybertruck"
+};
+
+// FORMA NORMAL CON IF ELSE
+/*
+let modelo
+if (coche.modelo) {
+    modelo = coche.modelo
+} else {
+    modelo = "XD"
+}
+*/
+
+// CON EL OPERADOR TERNARIO
+
+let modelo = coche.modelo ? coche.modelo: "XD"
+
+// llamamos al modelo
+modelo;
+
+
+
+// EJEMPLO 2:
+
+// Este es un renderizado condicional
+function ListaTareas ({tareas}) {
+    return (
+        <React.Fragment>
+            {tareas.length ? (
+                <ul>
+                    {tareas.map}
+                </ul>
+            ) : (
+                <div>No hay tareas</div>
+            )}
+        </React.Fragment>
+    )
+}
+
+
+/* ----- 9.-  METODOS CON ARRAYS (arreglos) ------- */
+
+// Los metodos utilizados son : find, some, every, includes, map, filter, reduce
+
+
+/* ----- 10.-  Promise (Async / Await) ------- */
+
+//  Esto sirve para manejar el codigo asincrono en JavaScript
+
+
+/* ----- 11.-  nullish coalescing ( ?? ) operator  -  (Operator de coalescencia nula) ------- */
+
+// Similar a la opracion ternario, pero sirve al comprobar un valor y si es null o undefined se le puede asignar un valor por defecto
+
+
+// Ejemplo con el opracion ternario,
+
+function suma(a, b ) {
+
+    a = a == null ? 0 : a
+    b = b == null ? 0 : b
+
+    return a + b
+}
+
+
+// Ejemplo con el nullish coalescing OP,
+
+function suma(a, b ) {
+    // AQUI SE VE LA DIFERENCIA
+    a = a ?? 0
+    b = b ?? 0
+
+    return a + b
+}
+
+// Llamamos a suma
+suma()
+
+
+// Ejemplo con REACT
+
+function Avatar({user}) {
+    return <img src={user.imageUrl ?? 'https://placeholder.it/kjlhsadkjhas'}/>
+}
+
+/* ----- 12.-  OPTIONAL CHAINING ( ?. ) - encadenamiento opcional  ------- */
+
+// Esto permite acceder de forma segura a variables anidadas dentro de una estructura dentro de un objeto
+
+// Antes para comprobar el un segundo o tercer nivel si esa propidad en el objeto existia se tenia que realizar varias comprobaciones.
+
+// Ejemplo
+
+const user = {
+    nombre,
+    edad,
+    location: {
+        x,
+        y,
+        city: {
+
+        }
+    }
+}
+
+// ASI NO
+/* const zipcode = user && user.location && user.location.city && user.location.city.zipcode */
+
+// ASÌ SI
+// Se coloca la interrogante (?) antes del punto(.).
+// Esto comprueba si existe cada uno dentro de la variable anterior
+const zipcode1 = user?.location?.city?.zipcode
+
+// EJEMPLO CON UNA FUNCION EN REACT
+
+function User () {
+    return (<div>ZIP CODE: {user?.location?.city?.zipcode}</div>)
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
