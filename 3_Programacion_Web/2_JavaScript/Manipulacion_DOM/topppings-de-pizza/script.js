@@ -41,7 +41,7 @@ const toppings = document.getElementsByClassName('topping');
 
 // CON 'getElemetByTagName()' podemos acceder a los elementos HTML. 
 
-const misToppings = document.getElementsByTagName('li');   
+const misToppings = document.getElementsByTagName('li');
 
 // Devuelve lo que hay en al etiqueta 'li'
 //console.log(misToppings)
@@ -79,10 +79,92 @@ const otroToppigNaranja = document.querySelector('ul li.fondo-naranja')
 
 // Aqui usamos una caracteristica CSS en el parametro para no llamar al primero elemento que no sea marron.
 const primerToppigNoMarron = document.querySelector('ul li:not(.fondo-marron)')
-console.log(primerToppigNoMarron)
+//console.log(primerToppigNoMarron)
 
 
 // ---->'querySelectorAll()' permite seleccionar todos los elementos que cumplan con el criterio señalado
+
+const toppingsFondoNaranja = document.querySelectorAll('.topping.fondo-naranja')
+
+//Al imprimir la información muestra un 'NodeList' que muestra todos los nodos que tengan el selector declarado en el parametro
+//console.log(toppingsFondoNaranja)
+
+//Se puede acceder a los indices del NodeList y mostrar nodo por nodo
+//console.log(toppingsFondoNaranja[0])
+//console.log(toppingsFondoNaranja[1])
+
+// ------- ASIGNAR ESTILO CON JS ------------- //
+
+// Se peude modificar los estilos de una etiqueta HTML llamando a la función 'querySelector' y en el parametro la clase o id que se desee.
+
+const primerTopping = document.querySelector('.topping')
+
+//Despues de declarar la constante, se coloca la función style y luego el atributo y luego asignar lo que se desee estilar.
+
+//primerTopping.style.backgroundColor = 'blue'
+//primerTopping.style.color = '#6dff00'
+//primerTopping.style.textTransform = 'uppercase'
+
+
+// ---------- TEXTO EN EL DOM ----------- //
+
+// ----> Acceder al texto <---- //
+// Se puede usar innerHTML, innerText, textContent, pero cada uno tendra diferente representación.
+
+
+const listaDeToppings = document.getElementById('lista-toppings')
+
+/*console.log('> innerHTML')
+console.log(listaDeToppings.innerHTML)*/
+
+/*console.log('> innerText')
+console.log(listaDeToppings.innerText)*/
+
+/*console.log('> textContent')
+console.log(listaDeToppings.textContent)*/
+
+
+// ----> Modificar al texto <---- //
+
+const tituloMod = document.getElementById('titulo')
+
+// Este es un ejemplo de como modificar el texto HTML con JS
+titulo.innerText = 'Mis Toppings Favoritos'
+
+
+// ----> Modificar atributos de un elemento <---- //
+
+const enlace = document.getElementsByTagName('a')
+
+//Accedemos al indice del HTML Collection y luego usamos la funcion getAttribute() y en el parametro declaramos al 'href' de la constante 'enlace'.
+//console.log(enlace[0].getAttribute('href'))
+
+// Podemos borrar el atributo asi:
+//console.log(enlace[0].removeAttribute('href'))
+
+// Podemos cambiar el atributo asi:
+console.log(enlace[0].setAttribute('href', 'https://www.freecodecamp.org'))
+
+// ----> Agregar y modificar Clases <---- //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
