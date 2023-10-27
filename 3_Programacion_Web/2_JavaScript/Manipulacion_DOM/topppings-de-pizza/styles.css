@@ -65,6 +65,8 @@ body {
 
 
 
+/* DEMOSTRACION DE COMO AÑADIR CLASES EN JS*/
 
-
-
+.texto-verde {
+    color: rgb(56, 230, 56);
+}

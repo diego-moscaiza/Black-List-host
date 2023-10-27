@@ -129,7 +129,7 @@ console.log(listaDeToppings.textContent)*/
 const tituloMod = document.getElementById('titulo')
 
 // Este es un ejemplo de como modificar el texto HTML con JS
-titulo.innerText = 'Mis Toppings Favoritos'
+//titulo.innerText = 'Mis Toppings Favoritos'
 
 
 // ----> Modificar atributos de un elemento <---- //
@@ -143,9 +143,198 @@ const enlace = document.getElementsByTagName('a')
 //console.log(enlace[0].removeAttribute('href'))
 
 // Podemos cambiar el atributo asi:
-console.log(enlace[0].setAttribute('href', 'https://www.freecodecamp.org'))
+//console.log(enlace[0].setAttribute('href', 'https://www.freecodecamp.org'))
 
-// ----> Agregar y modificar Clases <---- //
+// --------- Clases de CSS en JS ----------- //
+
+
+const miPrimerTopping = document.querySelector('.topping')
+
+// El resultado es un DOMTokenList
+//console.log(miPrimerTopping.classList)
+
+
+// -----> Agregar Clases  <------ //
+
+//miPrimerTopping.classList.add('texto-verde')
+
+//console.log(miPrimerTopping.classList)
+
+
+// -----> Verificar existencia de Clases  <------ //
+
+//const verificarAtributo = miPrimerTopping.classList.contains('fondo-marron')
+
+//console.log(verificarAtributo)
+
+// Otra forma:
+//console.log(miPrimerTopping.classList.contains('fondo-marron'))
+
+
+// -----> Eliminar Clases  <------ //
+
+//const removerAtributo = miPrimerTopping.classList.remove('topping')
+
+//console.log(removerAtributo)
+
+// Otra forma:
+//console.log(miPrimerTopping.classList.remove('topping'))
+
+// --------> Creación de Elementos <--------- //
+
+// Se puede crear elementos HTML con JS
+
+// Este elemento ya existe en HTML, y es donde se agregará el nuevo elemento
+const listaToppings = document.getElementById('lista-toppings')
+
+// Este es el nuevo elemento
+//const toppingNuevo = document.createElement('li');
+
+
+// --- Agregar Elementos --- //
+
+// Con el metodo 'append()' y también se puede usar 'appendChild()''
+
+//listaToppings.append(toppingNuevo)
+
+// Ahora agregamos estilos y texto al nuevo elemento
+
+//toppingNuevo.classList.add('topping', 'fondo-marron')
+//toppingNuevo.innerText= "Queso Extra"
+
+
+// --- Remover Elementos --- //
+
+// Con el metodo 'remove()'
+
+//toppingNuevo.remove()
+//listaToppings.remove()
+
+
+// --------> Recorrer DOM <--------- //
+
+const listaToppin = document.getElementById('lista-toppings')
+
+// Muestra todo el HTMLCollection
+// console.log(listaToppin.children)
+
+// Muestra el texto de los elementos hijos
+//console.log(listaToppin.firstChild)
+//console.log(listaToppin.lastChild)
+
+// Muestra el elemento como etiqueta HTML
+//console.log(listaToppin.children[0])
+//console.log(listaToppin.firstElementChild)
+//console.log(listaToppin.firstElementChild.firstElementChild)
+
+
+// Se puede acceder a los elementos hermanos.
+
+// Con este metodo se muestra los elementos anteriores al declarado.
+//console.log(listaToppin.previousElementSibling)
+
+// Con este metodo se muestra los elementos posteriores al declarado.
+//console.log(listaToppin.nextElementSibling)
+
+// Para acceder a los Nodos se colocaria así:
+
+//console.log(listaToppin.previousSibling) //o tambien .nextSibling
+
+// parentElement es el padre del elemento actual
+//console.log(listaToppin.parentElement)
+
+// parentNode es el padre del nodo actual
+//console.log(listaToppin.parentNode)
+
+/* La única diferencia es que la propiedad `parentElement` puede ser `null` si el nodo padre no es un nodo de elemento: */
+
+
+// --------> EVENTOS DEL DOM <--------- //
+
+// Un suceso que ocurre en el sitio web como resultado de interacción con el usuario o por otra causa como cambios en el estado del dispositivo o de la ventana.
+
+// Eventos comunes: curso y teclado.
+
+/*Conceptos importantes: 
+Elemento target(blanco o lugar a donde se dirige), 
+Trigger (Desencadenante),
+Event Handler (Funcion que se ejecuta cuando ocurre un evento),
+Event Listener (Funcion que escucha a un evento cuando este ocurra).*/
+
+
+// --------> EVENTOS DEL HTML <--------- //
+
+// Atributos HTML: 'onclick' 
+
+// Funcion en JS:
+
+/*function mostrarClick(topping) {
+    console.log(topping)
+}*/
+
+// ----- AddEventListener ----- //
+
+// ---> EJEMPLO 1:
+
+// Definimos la constante para obtener un elemento HTML pr su ID
+//const albaca = document.getElementById('albaca')
+
+// Declaramos la funcion 'mostrarClic()'
+/*function mostrarClick(e) { // usamos topping, e como parametros
+    console.log(e.target.innerText) // se imprimime usando los parametros
+}*/
+
+// Con el parametro 'topping' en la funcion: 'mostrarClick', muestra un Pointer Elemenet.
+// Con 'e.target' se muestra la etiqueta HTML.
+// Con 'e.target.innerText' muestra solo el texto de la etiqueta.
+
+//albaca.addEventListener('click', mostrarClick)
+
+
+// ---> EJEMPLO 2:
+
+const topping = document.getElementsByClassName('topping')
+
+function mostrarClickTopping(e) { 
+    console.log(e.target.innerText)
+}
+
+for (const topping of toppings) {
+    // Muestra todas las etiquetas HTML que tienen la clase topping
+    //console.log(topping)
+
+    //Ahora muestra el texto del cada uno de los elementos de la lista de toppings
+    topping.addEventListener('click', mostrarClickTopping)
+}
+
+// ALTERNATIVA EN FUNCIONC FLECHA :
+
+// Pasando como segundo parametro la primera funcion desde el argumento o parametro.
+/*
+for (const topping of toppings) {
+    topping.addEventListener('click', (e) => { 
+        console.log(e.target.innerText)
+    })
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
