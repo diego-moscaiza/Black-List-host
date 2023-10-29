@@ -1,12 +1,18 @@
-//INTRODUCCION A JAVASCRIPT
+// ----- INTRODUCCION A JAVASCRIPT ---- //
+
+/* ---> SCOPE EN JS. //
+- El Scope se refiere al alcance de una variable en un documento de JS. El cual se define con los nombres var y let, para el alcance global y local respectivamente.*/
+
+var totalAlcance = "Variable global" // No se suele usar
+let alcanceLimitado = "Variable local" // El estandar actual para definir variables
 
 
-//MOSTRAR MENSAJE
+// ---> MOSTRAR MENSAJE //
 
 console.log('Hola mundo')
 
 
-// TIPOS DE DATOS (primitivos)
+// ---> TIPOS DE DATOS (primitivos) //
 
 let string = 'TEXTO'
 let number = 1232
@@ -15,17 +21,17 @@ let bool_false = false
 let sinDefinir = undefined
 let nulo = null
 
-// Renderización de datos
+// --->  RENDERIZACIÓN DE DATOS //
 
 document.write('texto')
 
 alert(true)
 
-// TIPOS DE DATOS (No primitivos)
+// ---> TIPOS DE DATOS (No primitivos) //
 
 let lista = [1, 2, 3, 4, 5, 6]
 
-// Es un objeto con formato de clave : valor
+// Es un objeto con formato de clave : valor //
 let jugadores = { 
     10: 'Messi',
     7: 'Cristiano Ronaldo'
@@ -39,17 +45,17 @@ let emails = {
     ]
 }
 
-// VARIABLES
+// --->  VARIABLES //
 
 let telefono = '948752900'
 alert(telefono)
 
-// CONSTANTES
+// ---> CONSTANTES. Variables que no cambian su valor //
 
 const pi = 3.14159265359
 
 
-// OPERADORES ARITMÉTICOS
+// ---> OPERADORES ARITMÉTICOS //
 
 let sumar  = 1 + 1
 let restar = 9 - 3
@@ -58,7 +64,7 @@ let multiplicar = 2 * 5
 
 console.log(sumar) // con esto se imprime lo asginado a la variable 'sumar'
 
-// OPERADORES comparativos
+// --->  OPERADORES COMPARATIVOS //
 
 console.log(4 == 4)    // Devolvertá TRUE
 console.log(0 == '0')  // Devolverá TRUE porque compara solo el valor y no el tipo de dato
@@ -69,7 +75,7 @@ console.log(4 < 5) //VERDADERO
 console.log(4 >= 5) //FALSO
 
 
-// OPERADORES logicos
+// --->  OPERADORES LÓGICOS //
 
 // Se usa el operador 'and' colocando 'doble &'
 
@@ -86,7 +92,7 @@ console.log(false || true) // VERDADERO
 console.log(false || false) // FALSO
 
 
-// CONDICIONALES
+// --->  CONDICIONALES //
 
 let autorizado = true
 if (autorizado) {  
@@ -111,13 +117,13 @@ switch(color){
 }
 
 
-// FUNCIONES
+// --->  FUNCIONES //
 
 function suma(a, b) { return a + b } // esta es una funcion de suma
 suma(1,3)
 
 
-//Funcion quicksort
+// Funcion quicksort
 
 function quicksort(lista) {
     if(lista.length <= 1){
@@ -140,13 +146,13 @@ let listaOrdenada = quicksort(numeros)
 console.log(listaOrdenada)
 
 
-// BUCLES
+// ---> BUCLES //
 
 let lista2 = [1,2,3,4,5,6]
 let entero = 100
 let emergencia = 911
 
-//De la lista anterior ahora se jará un recorrido y se sumará cada valor definiendo el valor a sumar
+// De la lista anterior ahora se jará un recorrido y se sumará cada valor definiendo el valor a sumar
 for (elemento of lista2) { 
     let suma = sumar(elemento, 5)
     console.log(suma) // se imprimira el resultado de cada suma
@@ -160,7 +166,7 @@ while (entero <= emergencia) {
 // while (true) {console.log(i++)} ->con esto se imprimirá de uno en adelante sin parar.
 
 
-// PROGRAMACION ORIENTADA A OBJETOS 
+// ---> PROGRAMACION ORIENTADA A OBJETOS //
 
 let lenguajes = { 
     nombre: 'Javascript',
@@ -172,7 +178,7 @@ let lenguajes = {
 
 lenguajes.descripcion() // imprimirá el valor asignado
 
-// CLASES
+// ---> CLASES //
 
 class Animal {
     constructor(nombre, sonido) {
@@ -194,9 +200,9 @@ gato.hazSonido()
 tigre.hazSonido()
 
 
-// MODULOS. Archivos del mismo lenguaje de programación
+// ---> MODULOS. Archivos del mismo lenguaje de programación //
 
-//En modulo.js:
+// En modulo.js:
 
 function resta(a, b){
     console.log(a - b)
