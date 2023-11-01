@@ -1,5 +1,4 @@
 // Definiendo constantes obteniendo nodos del HTML
-
 const input = document.getElementById('ingresar-tarea')
 const boton = document.getElementById('btn-crear-tarea')
 const listaDeTareas = document.getElementById('lista-de-tareas')
@@ -8,48 +7,56 @@ const listaDeTareas = document.getElementById('lista-de-tareas')
 
 // Funcion para agregar tareas
 function agregarTarea() {
-    if(input.value) {
+    // Ingresará datos solo si hay caracteres pero no espacios vacios.
+    if (input.value.trim().length !== 0) {
         // Crear tarea
-        let tareaNueva = document.createElement('div')
+        let tareaNueva = document.createElement('li')
         tareaNueva.classList.add('tarea')
-        
+
         // Texto ingresado por el usuario
         let texto = document.createElement('p')
         texto.innerText = input.value
         tareaNueva.appendChild(texto);
 
-        // Crear y agregar contendor de iconos
-        let iconos = document.createElement('div')
-        iconos.classList.add('iconos')
-        tareaNueva.appendChild(iconos);
+        // Contenedor de botones
+        let botones = document.createElement('div')
+        botones.append(agregarBotonCheck(), agregarBotonEliminar())
+        tareaNueva.append(botones);
 
-        // Agregar Iconos
-        let iconoCompletarTarea = document.createElement('i')
-        iconoCompletarTarea.classList.add('bi', 'bi-check-circle-fill', 'icono-completar')
-        // Aqui escuchamos el click y luego ejecuta la funcion 'completarTarea'
-        iconoCompletarTarea.addEventListener('click', completarTarea)
-
-        let iconoEliminarTarea = document.createElement('i')
-        iconoEliminarTarea.classList.add('bi', 'bi-trash3-fill', 'icono-eliminar')
-        // Aqui escuchamos el click y luego ejecuta la funcion 'eliminarTarea'
-        iconoEliminarTarea.addEventListener('click', eliminarTarea)
-
-        // Agregar iconos a su propio contenedor
-        // append permite agregar varios nodos hijos y appendChild solo uno.
-        iconos.append(iconoCompletarTarea, iconoEliminarTarea)
-        
         // Agregar tarea a la lista
         listaDeTareas.appendChild(tareaNueva)
 
-    } else {
-        alert('Porfavor ingresa una tarea');
-    }   
+        // Borrar contenido en la entrada de texto
+        input.value = ""
+    } 
+    else {
+        alert('No se permiten ingresar espacios vacios.\nPor favor, ingrese caractéres.');
+    }
+}
+
+// Funcion para agregar botonCheck
+function agregarBotonCheck() {
+    // Agregar Iconos
+    let iconoCompletarTarea = document.createElement('i')
+    iconoCompletarTarea.classList.add('bi', 'bi-check-circle-fill', 'icono-completar')
+
+    // Aqui escuchamos el click y luego ejecuta la funcion 'completarTarea'
+    iconoCompletarTarea.addEventListener('click', completarTarea)
+    return iconoCompletarTarea
+}
+
+// Funcion para agregar botonEliminar
+function agregarBotonEliminar() {
+    let iconoEliminarTarea = document.createElement('i')
+    iconoEliminarTarea.classList.add('bi', 'bi-trash3-fill', 'icono-eliminar')
+    // Aqui escuchamos el click y luego ejecuta la funcion 'eliminarTarea'
+    iconoEliminarTarea.addEventListener('click', eliminarTarea)
+    return iconoEliminarTarea;
 }
 
 // Funcion para marcar tarea como completada
 function completarTarea(ev) {
     let tarea = ev.target.parentNode.parentNode
-
     // toggle permite alternar una clase. si tiene la clase en el parametro la elimina y si no la agrega.
     tarea.classList.toggle('completada')
 }
@@ -63,7 +70,7 @@ function eliminarTarea(ev) {
 // AddEventListener
 boton.addEventListener('click', agregarTarea)
 input.addEventListener('keydown', (ev) => {
-    if (ev.key === 'Enter'){
+    if (ev.key === 'Enter') {
         agregarTarea();
     }
 })
