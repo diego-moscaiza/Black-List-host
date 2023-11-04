@@ -9,7 +9,7 @@ Git funciona a través de comandos que se ingresan en una 'interfaz de línea de
 
 # Ciclo de trabajo
 El ciclo de trabajo de git se le demonina "working directory", directorio de trabajo en español.
-En este ciclo se conocen 2 fases:  
+En este ciclo se conocen 2 fases:
 - La primera fase se le conoce como "work area" o "workspace" que traducido es área de trabajo. Aqué se crean todos los nuevos archivos o tambien las modificaciones de los archivos existentes.
 - La segunda es el "staging area" o también conocido como área de ensayo, que es donde se almacenan todos los cambios traidos del área de trabajo.
 
@@ -17,7 +17,7 @@ Luego de realizar todos los cambios deseados pasamos los repositorios, el primer
 -  El repositorio local, que es donde se guarda definitivamente todos los cambios realizados en la máquina del usuario.
 -  El repositorio remoto es donde se suben los archivos del repositorio local a un servicio en la nube como github, gitlab o bitbucket a través de internet.
 
-![imagen](ciclo-git.jpg)
+![imagen](imagenes/ciclo-git.jpg)
 
 # ¿Cómo iniciar el control de versiones?
 Para iniciar el control de versiones se debe acceder a la carpeta o directorio donde se desee comenzar a utilizar este sistema y luego utilizar los comandos existentes teniendo en cuenta la funcionalidad que tiene cada uno.
@@ -32,37 +32,37 @@ Todos los comandos de git siempre inician con 'git' para poder ejecutar las func
 - **git switch** o **checkout** "nombre de rama existente": Para cambiar entre las ramas colocando el nombre de la rama a donde se desea ir.
 
 - **git add**: Sirve para añadir un archivo nuevo o que haya sido modificado o actualizado declarando el nombre especifico del archivo o todos los archivos con la opción "--all" o con un punto "." y el contenido agregado va al "staging area" o "area de ensayo".
-![Imagen](git-add.jpg)
+![Imagen](imagenes/git-add.jpg)
 
 - **git status**: Sirve para ver el estado de la rama donde uno se ubica y puede mostrar la información de la siguiente manera:
 
 1. Cuando no hay archivos en el area de trabajo:
-        ![Imagen](git-status/git-status-sin-archivos.png)
+        ![Imagen](imagenes/git-status/git-status-sin-archivos.png)
 
 2. Cuando usamos este comando después de añadir nuevos archivos en el area de trabajo los cuales no tienen seguimiento:
-        ![Imagen](git-status/git-status-con-archivos.png)
+        ![Imagen](imagenes/git-status/git-status-con-archivos.png)
 
 3. Añadimos con 'git add' y visualizamos los cambios:
-        ![Imagen](git-status/git-status-add.png)
+        ![Imagen](imagenes/git-status/git-status-add.png)
 
 4. Aqui visualuzamos las modificaciones:
-        ![Imagen](git-status/git-status-file-modified.png)
+        ![Imagen](imagenes/git-status/git-status-file-modified.png)
 
 - **git status -s**: El comando 'git status' con la opción '-s' muestra la informacion de forma abreviada.
 
 1. Cuando no hay archivos en el area de trabajo:
-        ![Imagen](git-status-opcion-S/git-status-S-sin-archivos.png)        
+        ![Imagen](imagenes/git-status-opcion-S/git-status-S-sin-archivos.png)
         - *No muestra nada y salta a la siguiente línea.*
 
 2. Cuando usamos este comando después de añadir nuevos archivos en el area de trabajo los cuales no tienen seguimiento:
-        ![Imagen](git-status-opcion-S/git-status-S-con-archivos.png)
+        ![Imagen](imagenes/git-status-opcion-S/git-status-S-con-archivos.png)
         - *Muestra el nombre de los archivos con los signos '??' porque no estan registrados en el directorio de trabajo de git.*
 
 3. Añadimos con 'git add' y visualizamos los cambios de forma concisa:
-        ![Imagen](git-status-opcion-S/git-status-s-add-.png)
+        ![Imagen](imagenes/git-status-opcion-S/git-status-s-add-.png)
 
 4. Aqui visualuzamos las modificaciones de forma concisa:
-        ![Imagen](git-status-opcion-S/git-status-S-file-modified.png)
+        ![Imagen](imagenes/git-status-opcion-S/git-status-S-file-modified.png)
 
 - **git rm**: Este comando con la opción '--cached' sirve para quitar uno o mas archivos del "staging area" y regresarlos al "workspace".
 
