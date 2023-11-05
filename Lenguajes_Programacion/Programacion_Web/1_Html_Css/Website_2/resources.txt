@@ -1,0 +1,11 @@
+#==== Google font : Poppins ======
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+
+#======= Gradient's =========
+For background -- linear-gradient(to right, #BDB1C5, #DDD7D0)
+For Button     -- linear-gradient(to right, #525252, #101010)
+
+#==== color =======
+text color      : #7B787C
+body background : #FAF8F4
