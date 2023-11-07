@@ -1,8 +1,5 @@
 # VARIABLES EN R.
 
-
-# video 04 – variables
-
 # Objetivo: estudiar qué es una variable en R.
 # ——————————————–
 # En este ejercicio vamos a:
@@ -15,45 +12,54 @@
 # practica 1: operaciones aritmeticas #
 #######################################
 
-# primer acertijo de redes sociales
+# 1. primer acertijo de redes sociales
 
+1+1-1*(1+1-1)/1+1*(-1)
 
 #######################################
 # practica 2: asignación de variables #
 #######################################
 
-# asigna los numeros a cada fruta
+# 1. asigna los numeros a cada fruta
 
+# - Las guías de estilo dictamina el uso de "<-" en vez de "=" para asignación de variables
 
+mango <- 10
+manzana <- 5
+aguacate <- 15
 
+# 2. resuelve el complejo acertijo
 
-# resuelve el complejo acertijo
+resultado <- ((2*15)+(4*5)+(1.5*10))
 
+# 3. imprime el resultado por pantalla
 
-# imprime el resultado por pantalla
-
+resultado
 
 ##################################
 # practica 3: tipos de variables #
 ##################################
 
-# observa la clase del resultado
+# - Nos referimos a binarios que pueden ser:
+# "numeric" (numeros), "character" (texto), "true" o "false", etc.
 
+# 1. observa la clase del resultado
+class(resultado)
 
-# crea una variable con algún nombre
+# 2. crea una variable con algún nombre
+nombre <- "Diego"
 
+# 3. observa la clase del nombre
+class(nombre)
 
-# observa la clase del nombre
+# 4. es 1 mayor que 2
+1 > 2
 
+# 5. cual es la clase de "1 > 2" // Es "logical"
+class(1 > 2)
 
-# es 1 mayor que 2
-
-
-# cual es la clase de esto
-
-
-# suma nombre con resultado
-
+# 6. sumar variables "nombre" y "resultado" // Da error.
+nombre + resultado
 
 
 # Hecho con gusto por Rafa @GonzalezGouveia
