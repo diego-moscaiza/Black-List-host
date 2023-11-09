@@ -15,16 +15,17 @@ let alcanceLimitado = "Variable local" // El estandar actual para definir variab
 console.log('Hola mundo')
 
 // ----- RENDERIZACIÓN DE DATOS ----- //
-document.write('texto')
-alert(true)
+document.write('texto') // Muestra texto en la pagina web.
+alert(true) // Muestra una alerta con lo que tiene el parámetro.
 
 
 // ----- VARIABLES ----- //
+// - Elementos con un valor que puede ser cambiado.
 let telefono = '948752900'
 alert(telefono)
 
 // ----- CONSTANTES ----- //
-// - Variables que no cambian su valor
+// - Elementos con un valor que no cambia.
 const pi = 3.14159265359
 
 // ----- PROGRAMACIÓN ORIENTADA A OBJETOS ----- //

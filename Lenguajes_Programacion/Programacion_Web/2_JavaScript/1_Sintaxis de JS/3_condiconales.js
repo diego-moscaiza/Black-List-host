@@ -1,6 +1,8 @@
 // --->  CONDICIONALES //
 
+// Condicional If - Else
 let autorizado = true
+
 if (autorizado) {
     document.write('Bienvenido')
     console.log('Puede Ingresar!')
@@ -8,6 +10,7 @@ if (autorizado) {
 else { alert('No autorizado') }
 
 
+// Condicional Switch
 let color = 'amarillo'
 
 switch(color){
