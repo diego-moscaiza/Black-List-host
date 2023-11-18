@@ -140,6 +140,70 @@ printFirstElemet(animales)
 
 // Funcion quicksort.
 
+function quicksort(lista: number[]): number[] {
+    if (lista.length <= 1) {
+        return lista;
+    };
+
+    let pivote = lista[0];
+    let izquierda: number[] = [];
+    let derecha: number[] = [];
+
+    let i = 1
+    for (i; i < lista.length; i++) {
+        lista[i] < pivote
+        ? izquierda.push(lista[i])
+        : derecha.push(lista[i]);
+    };
+
+    return quicksort(izquierda).concat(pivote, quicksort(derecha));
+};
+
+let numbers: number[] = [23, 45, 16, 37, 3, 99, 22];
+let listOrdenada: number[] = quicksort(numbers);
+console.log(listOrdenada);
 
 
+// Bucles
 
+// - Bucle for
+
+let animals:string[] = ['perro', 'gato', 'tigre'];
+
+for (let animal of animals) {
+    console.log(animal);
+};
+
+// - otro ejemplo
+
+for (let numero of numeros) {
+    multiplicar(numero, 2)
+}
+
+
+// Bucle while
+
+let emergencia: number = 911;
+while (entero <= emergencia) {
+    console.log(entero);
+    entero++;
+};
+
+// POO
+
+interface Lang {
+    nombre: string;
+    // Con el simbolo de pregunta se vuelve 'opcional'.
+    anio?: number;
+    descripcion: Function;
+}
+
+let javascript: Lang = {
+    nombre: 'JavaScript',
+    anio: 1993,
+    descripcion: function () {
+        console.log(`${this.nombre} fue creado en ${this.anio}`);
+    }
+};
+
+javascript.descripcion();
