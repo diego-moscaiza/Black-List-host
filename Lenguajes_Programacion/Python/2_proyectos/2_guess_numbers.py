@@ -1,13 +1,13 @@
-# XD
+# El projecto consta en adivinar un numero entre numeros ya definidos.
 
 # Importando librerias:
 import random
 
 
 def adivina_el_numero(x):
-    print("===================")
+    print("========================")
     print(" ¡Bienvenidos al juego! ")
-    print("===================")
+    print("========================")
     print("Tu meta es adivinar el número generado por la computadora.")
 
     numero_aleatorio = random.randint(1, x) # Numero aleatorio igual Y entre 1  y X
