@@ -1,6 +1,5 @@
 # Introducción de Python
 
-
 # IMPRIMIR MENSAJES
 print('Hola Mundo')
 
@@ -20,19 +19,3 @@ seleccionado = False
 
 # CONSTANTES. Elementos que no cambiaran su valor nunca.
 pi = 3.1416
-
-
-# MODULOS: Permite dividir el proyectos en varios archivos para una mejor organización.
-
-#Para este ejemplo de usarán dos archivos de python, uno llamado 'main' y otro 'modulo'
-
-# En modulo:
-def restar(a, b):
-    print(a - b);
-
-# En main:
-"""
-import modulo
-
-modulo.restar(10, 6)
-"""
