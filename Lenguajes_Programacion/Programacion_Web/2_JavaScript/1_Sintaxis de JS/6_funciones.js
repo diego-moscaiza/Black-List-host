@@ -1,9 +1,10 @@
-// FUNCIONES //
+// FUNCIONES
 function suma(a, b) { return a + b } // esta es una funcion de suma
 suma(1, 3)
 
-// Ejemplo: Función quicksort
+// - Ejemplo: Función quicksort
 // - El algoritmo de ordenamiento rapido consiste en acomodar un elemento llamado 'pivote' en su posición definitiva, luego ordenar los elementos menores al Pivot y a continuación ordenar los elementos mayores al 'pivote'.
+
 function quicksort(lista) {
     if (lista.length <= 1) {
         return lista
@@ -26,7 +27,7 @@ let listaOrdenada = quicksort(numeros)
 console.log(listaOrdenada)
 
 
-// Ejemplo: Función mergesort
+// - Ejemplo: Función mergesort
 
 // - Primero creamos una función que divida el arreglo.
 function merge(left, right) {

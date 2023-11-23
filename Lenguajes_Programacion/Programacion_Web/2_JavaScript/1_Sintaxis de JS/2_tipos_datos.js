@@ -10,7 +10,7 @@ let nulo = null
 // 2. TIPOS DE DATOS (No primitivos) //
 let lista = [1, 2, 3, 4, 5, 6]
 
-// Es un objeto con formato de clave : valor //
+// - Es un objeto con formato de clave : valor //
 let jugadores = {
     10: 'Messi',
     7: 'Cristiano Ronaldo'

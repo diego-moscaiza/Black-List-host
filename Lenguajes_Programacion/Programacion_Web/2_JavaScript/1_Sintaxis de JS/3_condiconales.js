@@ -1,6 +1,6 @@
-// --->  CONDICIONALES //
+// CONDICIONALES //
 
-// Condicional If - Else
+// - Condicional If - Else
 let autorizado = true
 
 if (autorizado) {
@@ -10,7 +10,7 @@ if (autorizado) {
 else { alert('No autorizado') }
 
 
-// Condicional Switch
+// - Condicional Switch
 let color = 'amarillo'
 
 switch(color){
