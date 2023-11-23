@@ -1,4 +1,4 @@
-/* ---------- 4.-  DESTRUCTURING ----------*/
+/* 4.  Destructuring (Desestructurando) */
 
 // Definimos una constante
 const cuadrado = {
@@ -6,16 +6,15 @@ const cuadrado = {
     y: 10,
 }
 
-// ASÍ NO
-/*
+/* // ASÍ NO
     function calcularArea(cuadrado){
         const {x, y} = cuadrado;
         return x * y;
     }
 */
 
-// ASÍ SÍ.
-// Util para pasar propiedades a un COMPONENETE en REACT.
+// ASÍ DEBE SER.
+// Útil para pasar propiedades a un COMPONENETE en REACT.
 function calcularArea({x, y}) {
     return x * y;
 }

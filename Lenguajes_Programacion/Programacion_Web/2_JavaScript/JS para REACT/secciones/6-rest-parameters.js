@@ -1,19 +1,19 @@
-/* ----- 6.-  SPREAD OPERATOR / REST PARAMETERS ------- */
+/* 6. Rest Parameters and spread operator (Parámetros de descanso y el operador de extensión) */
 
 const array = [1, 2 ,3, 4, 5]
 const otroArray = [6, 7, 8, 9, 10]
 
-// Asi ya no
+// - Usando la funcion "concat()"
 // const newArray = array.concat(otroArray)
 
-//Asi sí
+// - Usando Spread Operator
 const nuevoArray = [...array, ...otroArray]
 console.log(nuevoArray)
 
-// ES UTIL AL MOMENTO DE AGRUPAR OBJETOS EN UN ARREGLO YA QUE SE NECESITA DE MENOS CODIGO.
-// TODO SE UNE EN UN ARREGLO SIN NECESIDAD DE CONCATENAR UNOS CON OTROS
+// - Es útil al momento de agrupar objetos en un arreglo ya que se necesita de menos código.
+// - Todo se une en un arreglo sin necesidad de concatenar unos con otros
 
-// OTRO EJEMPLO
+// - Ejemplo:
 
 const objeto1 = {
     a: "a",
@@ -26,15 +26,15 @@ const objeto2 = {
     e: "e",
 }
 
-// Asi ya no
+// - Usando la función 'assign()'
 // const nuevoObjeto = Object.assign({}. objeto1, objeto2)
 // console.log(nuevoObjeto)
 
-// Asi sí
+// - Usando 'spred operator'
 const newObjeto = [... objeto1, ... objeto2]
 console.log(newObjeto)
 
-// OTRO EJEMPLO con REACT
+// - Otro ejemplo con 'react.js'
 
 // Puede funcionar con normalidad
 function Componente({id, name, username, profile}) {

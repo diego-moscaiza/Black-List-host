@@ -1,11 +1,11 @@
-/* ---------- 3.-  ARROW FUNCTION -> LAS FUNCIONES FLECHAS ---------- */
+/* 3. Arrow function (Función de flecha) */
 
-// Declarando una función normal:
+// - Declarando una función normal:
 function nameFunction() {
     return "Hola"
 }
 
-// Declarando una funcion flecha '=>':
+// - Declarando una funcion flecha '=>':
 
 /* ESTRUCTURA:
 - Se crea una constante luego se asigna con un paréntesis '()' para los parametros de la función, después colocamos una flecha '=>' y por último se escribe lo que se desea ejecutar.*/
@@ -24,32 +24,30 @@ const newArrowFunction2 = () => {
 newArrowFunction1(); // Ejecutar funcion
 
 
-// Otro ejemplo:
+// - Ejemplo 1:
 const array1 = [1, 2, 3, 4];
 
-// '10' + 1 + 2 + 3 + 4
-const initialValue = 10;
+const initialValue = 10; // Se posiciona '10' primero que los otros valores.
 
+// - Estrctura usando una "funcion regular"
 const sumWithInitial = array1.reduce(
-    // - Estrctura usando una "funcion regular"
     function (accumulator, currentValue) {
         return accumulator + currentValue
-    }, initialValue
+    }, initialValue // <- valor externo
 );
+// NOTA: Se puede añadir un valor externo de la función interna
 
+
+// - Estrctura usando una "funcion flecha"
 const sumWithInitial1 = array1.reduce(
-    // - Estrctura usando una "funcion flecha"
     (accumulator, currentValue) => accumulator + currentValue,
-    initialValue
+    initialValue // <- valor externo
 );
-// - En este caso se puede añadir un valor fuera de la función interna y cona la función flecha esta puede estar incluida.
+// NOTA: Con la función flecha un valor externo puede estar incluido.
 
-console.log(sumWithInitial1);
-// Retornará 20 en ambas.
+console.log(sumWithInitial1); // Retornará 20 en ambas.
 
-
-
-// FUNCTION WHIT JSX (USED ON REACT)
+// - Funciones con JSX (Usado en React.js)
 function ListaDeTareas(){
     return(
         <ul>

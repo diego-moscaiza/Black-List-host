@@ -1,15 +1,14 @@
-/* ----- 8.-  TERNARY OPERATOR ------- */
+/*  8. Ternary Operator '? - :'(Operador ternario)  */
 
-// El operador ternario es una alternatica añ tipo IF ELSE
+// El operador ternario es una alternatica a 'If - else'
 
-// EJEMPLO 1:
-
+// - Ejemplo 1:
 const coche = {
     marca : "Tesla",
     modelo: "Cybertruck"
 };
 
-// FORMA NORMAL CON IF ELSE
+// - Usando 'If - else'
 /*
 let modelo
 if (coche.modelo) {
@@ -19,18 +18,16 @@ if (coche.modelo) {
 }
 */
 
-// CON EL OPERADOR TERNARIO
-
+// - Usando el 'operador ternario'
 let modelo = coche.modelo ? coche.modelo: "XD"
 
-// llamamos al modelo
+// - Llamamos al modelo
 modelo;
 
 
+// - Ejemplo 2:
 
-// EJEMPLO 2:
-
-// Este es un renderizado condicional
+// Este es un renderizado condicional:
 function ListaTareas ({tareas}) {
     return (
         <React.Fragment>

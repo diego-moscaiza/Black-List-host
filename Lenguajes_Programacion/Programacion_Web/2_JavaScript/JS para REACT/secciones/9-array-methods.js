@@ -1,4 +1,4 @@
-/* ----- 9.-  ARRAYS METHODS (Métodos con arreglos.) ------- */
+/* 9.  Arrays Methods (Métodos con arreglos) */
 
 // - Cuando creamos arreglos y queremos recorrelos podemos hacer el uso de diferentes formas, normalmente se ha realizado por bucles.
 
