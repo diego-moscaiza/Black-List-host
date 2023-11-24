@@ -1,3 +1,5 @@
+/* Clases */
+
 interface Lang {
     nombre: string;
     // Con el simbolo de pregunta se vuelve 'opcional'.
