@@ -1,3 +1,5 @@
+// - Instancias de la clase 'Lenguaje'.
+
 Lenguaje html = new Lenguaje("HTML"; 1993);
 html.descripcion();
 

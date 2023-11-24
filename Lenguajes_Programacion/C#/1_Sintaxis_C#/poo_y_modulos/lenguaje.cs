@@ -1,3 +1,6 @@
+/* Programacion orientada a objetos (POO)*/
+// - En 'POO' se usan las 'clases'
+
 class Lenguaje
 {
     private string nombre;
@@ -12,5 +15,4 @@ class Lenguaje
     {
         Console.WriteLine("{0} fue creado en {1}", this.nombre, this.anio);
     }
-
 }
