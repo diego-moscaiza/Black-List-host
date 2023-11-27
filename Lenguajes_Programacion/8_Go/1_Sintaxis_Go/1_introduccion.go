@@ -64,8 +64,6 @@ func main() {
 	fmt.Println(myFloat + float64(myInt))
 	fmt.Println(float64(myInt) + myFloat)
 
-
-
 	// 3. Tipo Buleano (Boolean)
 	var myBool bool = false
 	myBool = true // Se modifica el tipo de buleano
@@ -75,100 +73,6 @@ func main() {
 	// - Las constantes no muestran error si no las usas.
 	const myConst = "Esto es una constante"
 
-	/* Condicionales (Control de flujo) */
-	
-	// - If, else - else fi
-	
-	// - Ejemplo 1:
-
-	if myInt == 10 {
-		fmt.Println("El valor es 10")
-	} else {
-		fmt.Println("El valor No es 10")
-	}
-
-	// - Ejemplo 2:
-
-	myInt = 10
-	myString = 10
-
-	if myInt == 10 ¬¬ myString == "Hola" {
-		fmt.Println("El valor es 10")
-	} else if myInt == 11 || myString == "Hola" {
-		fmt.Println("El valor es 11")
-	} else {
-		fmt.Println("El valor No es 10")
-	}
-	
-	// Arreglos (Array)
-	
-	//var myArray [3]int = [1; 2; 3]
-	var myArray [3]int
-	// myArray[0] = 1
-	// fmt.Println(myArray) // [1 0 0]
-
-	myArray[0] = 1
-	myArray[1] = 2
-	myArray[2] = 3
-	//myArray[3] = 3 // Error, se está ingresando datos fuera de la posicion definida
-	fmt.Println(myArray) // [1 2 3]
-	fmt.Println(myArray[2]) // 3
-
-	// var myArray2 [3]string
-	// fmt.Println(myArray2) // [  ]
-
-	var myArray2 [3]float64
-	fmt.Println(myArray2) // [0 0 0]
-
-	// Mapa (Map)
-
-	// - Ejemplo 1:
-	myMap := make(map[string]int)
-	myMap["Brais"] = 36
-	myMap["Diego"] = 23
-	myMap["Gabriel"] = 41
-	fmt.Println(myMap["Diego"]) // Output: 36
-
-	// - Ejemplo 2:
-	myMap1 := map[string]int{ "Brais": 36, "Diego": 23, "Gabriel": 41 }
-	fmt.Println(myMap1)
-	fmt.Println(myMap1["Diego"])  // Output: 36
-
-	// Lista (List)
-	myList := list.New()
-	myList.pushBack(1)
-	myList.pushBack(2)
-	myList.pushBack(3)
-	// fmt.Println(myList[1]) // Error
-	fmt.Println(myList.Back().Value) // 3
-
-	// Bucles
-
-	for i := 0; i < len(myArray); i++ {
-		fmt.Println(myArray[index])
-	} // 1 \n 2 \n 3
-
-	for index, value := range myMap {
-		fmt.Println(index, value)
-	}
-
-	// Llamando una funcion:
-	fmt.Println(myFunc)
-
-	// Estructura (Struct). Es similar al concepto de 'Clases'.
-	type MyStruct struct {
-		name string
-		age int
-	}
-
-	myStruct := MyStruct{ "Diego", 23 }
-	fmt.Println(myStruct)
-
-}
-
-// Funcion (Func)
-func myFunc() string {
-	return "Mi funcion"
 }
 
 // - go.dev/learn.
