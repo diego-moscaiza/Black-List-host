@@ -29,8 +29,3 @@ print_r($my_array); // Imprime el contenido del arreglo con sus indices.
 
 // 2. 'array_unique()'. No admite valores repetidos en un arreglo
 print_r(array_unique($my_array)); //
-
-
-
-// php.net/manual/es
-// learn-php.org

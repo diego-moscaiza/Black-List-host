@@ -50,4 +50,7 @@ echo MY_CONSTANT . "\n";
 // Interpolacion
 echo "El valor de mi entero es $my_int y el de mi boolean es $my_boolean.\n";
 
+
+// php.net/manual/es
+// learn-php.org
 ?>
