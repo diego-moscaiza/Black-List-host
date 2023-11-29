@@ -50,8 +50,8 @@ const frase2 = "la quincena es para la cena.";
 const validacion2 = frase2.match(regExp2);
 console.log(validacion2);
 
-// 3. Usamos el modificador insensytive -> 'i' para buscar las coincidencias sin importar que esté en mayuscula o minúscula
-const regExp3 = /LA/i;
+// 3. Usamos el modificador insensitive -> 'i' para buscar las coincidencias sin importar que esté en mayuscula o minúscula
+const regExp3 = /LA/gi;
 const frase3 = "la espera en el aeropuerto de LA";
 const validacion3  = frase3.match(regExp3);
 console.log(validacion3);
@@ -162,7 +162,29 @@ const validacion18 = frase18.match(regExp18);
 console.log(validacion18);
 
 // 19. Con el cuantificador '?=' analiza la coincidencia que esté antes de lo que se desea buscar.
-const regExp19 = /(?=\.\A)/;
+const regExp19 = /^\w+(?=\.)/; // /\w(?=\.)/; solocapture una letra antes del punto. con un 'w+' se arregla
 const frase19 = "file.txt";
 const validacion19 = frase19.match(regExp19);
-console.log(validacion19); // por resolver
+console.log(validacion19);
+
+
+/* EJERCICIOS */
+
+const regExpValidacionPrecio = /^\d{0,8}(\.\d{1,2})?$/;
+const regExpNumEntero = /^\d+$/;
+const regExpNumDecimal = /^\d*\.\d+$/;
+const regExpNumEnterosDecimales = /^\d*(\.\d+)?$/;
+const regExpNumEnteroPositivoNegativo = /^-?\d*(\.\d+)?$/;
+const regExpAlfanumericosSinEspacios = /^[a-zA-Z0-9]*$/;
+const regExpAlfanumericosConEspacios = /^[a-zA-Z0-9 ]*$/;
+const regExpCorreoElectronico = /^([a-z0-9_\.\+-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+const regExpContraseñaFuerte = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=~`|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/;
+const regExpUrlHttps = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%.-\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#()?&//=]*)/;
+const regExpIpv4 = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
+const regExpFecha = /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12\d|3[01]]))/;
+const regExpHoraFormato12 = /((1[0-2]|0?[1-9]):([0-5][0-9]) ?([AaPp][Mm]))/;
+const regExpHoraFormato24 = /^(0[0-9]|1[0-9])|2[0-3]):([0-5][0-9])$/;
+
+
+
+
