@@ -19,10 +19,10 @@ Luego de realizar todos los cambios deseados pasamos los repositorios, el primer
 -  El repositorio local, que es donde se guarda definitivamente todos los cambios realizados en la máquina del usuario.
 -  El repositorio remoto es donde se suben los archivos del repositorio local a un servicio en la nube como github, gitlab o bitbucket a través de internet.
 
-A continuación un gráfico de ciclo de trabajo en git:
+A continuación se presenta un gráfico de ciclo de trabajo en git:
 ![imagen](imagenes/Grafico_Ciclo_Git.jpg)
 
-Y adicionalmente un gráfico de ciclo de trabajo de git en el repositorio local y mostrando las transacciones con el repositorio remoto:
+Y adicionalmente se presenta un gráfico de ciclo de trabajo de git en el repositorio local y mostrando las transacciones con el repositorio remoto:
 
 ![Imagen](imagenes/Grafico_Ciclo_Git_Extendido.jpg)
 
@@ -202,25 +202,55 @@ $ git restore --staged <file>
 
 **git log**: Muestra el registro de los commits con información detallada del autor, fecha y hora que se han realizado.
 
+### Configuración de credenciales en el repositorio local
+**git config**: Usando este comando se puede mostrar y modificar la configuración del repositorio y las opciones globales de git.
+
+```bash
+# - Muestra toda la lista de la configuracion de git.
+$ git config --list
+
+# - Ahora vamos a configurar las credenciales del usuario como el nombre y el correo.
+$ git config user.name <name>
+
+$ git config user.email <email>
+```
+
+### Comandos para conexión y manipulación con repositorio remoto
+
+Existen servicios en la nube como github, gitlab y bitbucket para almacenar los archivos del repositorio local.
+
+
 **git remote**: Permite crear, ver y eliminar conexiones remotas con otros repositorios.
 
 ```bash
 # - Para crear una conexión se utilizan las opción "add origin".
-$ git remote add origin [link url https://....git]
+$ git remote add origin [link https://server.com/name_user/name_project.git]
 
 # - Para cambiar la url del repositorio en la nube hay 2 formas:
 
 # 1. La forma sencilla es modificar directamente la URL:
-$ git remote set-url origin [updated link url https://....git]
+$ git remote set-url origin [updated link https://server.com/name_user/name_project.git]
 
 # 2. Alternativamente, la forma extensa es eliminar la URL actual y añadiendo la nueva:
 $ git remote rm origin
-$ git remote add origin [updated link https://....git]
+$ git remote add origin [updated link https://server.com/name_user/name_project.git]
 ```
 
-**git push**: Con este comando podemos subir nuestros cambios del repositorio local al servidor en la nube.
+**git push**: Con este comando podemos subir nuestros cambios del repositorio local al repositorio remoto alojado en un servidor / en un servicio de la nube.
 
-**git pull**: Realiza la función inversa de "git push". Podemos bajar los archivos del servidor en la nube a la máquina del usuario.
+```bash
+$ git push
+Enumerating objects: 53, done.
+Counting objects: 100% (53/53), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (31/31), 1.69 MiB | 1.03 MiB/s, done.
+Total 31 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To [link url https://server.com/name_user/name_project.git]
+   122eb43..e0d84e0  main -> main
+```
 
+**git pull**: Realiza la función inversa de "git push". Con este comando descargamos los cambios que se hayan subido al servidor en la rama correspondiente.
 
 > Para ver mas sobre git podemos ir la documentación oficial en : [git-scm.com](https://git-scm.com)
