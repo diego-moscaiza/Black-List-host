@@ -176,13 +176,25 @@ $ git branch <old_branch_name> <new_branch_name>
 **git switch**: Sirve para cambiar entre las ramas existentes colocando el nombre de la rama a donde se desea ir.
 
 ```bash
-$ git switch <branch_name>
+$ git switch <other_branch_name>
 ```
 
-**git merge**: Este comando sirve para fusionar la rama seleccionada con la rama en donde nos ubicamos.
+**git merge**: Este comando sirve para fusionar la rama seleccionada con la rama en donde se ubique es ese momento el usuario.
 
 ```bash
-$ git merge <branch_name>
+$ git merge <other_branch_name>
+
+# Ejemplo de una combinación con otra rama
+$ git merge dev
+Updating c9bb9be..d09fa4b
+Fast-forward
+ ...img/photo_1.jpg    | Bin 0 -> 192116 bytes
+ ...img/text_file.txt  | Bin 92336 -> 0 bytes
+ ...img/photo_2.jpg    | Bin 114969 -> 31420 bytes
+ .../directory/file.md | 257 +++++++++++++++++----
+ 4 files changed, 215 insertions(+), 1 deletions(-)
+ create mode 100644 img/photo_1.jpg
+ delete mode 100644 text_file.txt
 ```
 
 **git restore**: Con este comando podemos restablecer o descartan las modificaciones que se hayan realizado en el repositorio.
@@ -219,7 +231,6 @@ $ git config user.email <email>
 
 Existen servicios en la nube como github, gitlab y bitbucket para almacenar los archivos del repositorio local.
 
-
 **git remote**: Permite crear, ver y eliminar conexiones remotas con otros repositorios.
 
 ```bash
@@ -252,5 +263,10 @@ To [link url https://server.com/name_user/name_project.git]
 ```
 
 **git pull**: Realiza la función inversa de "git push". Con este comando descargamos los cambios que se hayan subido al servidor en la rama correspondiente.
+
+```bash
+$ git pull
+
+```
 
 > Para ver mas sobre git podemos ir la documentación oficial en : [git-scm.com](https://git-scm.com)
