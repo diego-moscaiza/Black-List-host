@@ -1,13 +1,15 @@
-# ¿Qué es Git?
+# Introducción a Git
+
+## ¿Qué es Git?
 Git es un sistema de control de versiones que permite llevar un registro de todos los cambios que se realizan en un repositorio.
 
-# Ramas
+## Ramas
 Git maneja un sistema de ramificación, cada rama se denomina como 'branch' y normalmente al iniciar con git se crea la rama 'main', anteriormente llamada 'master', y se deja como la rama principal donde se insertarán los cambios de las otras ramas y de donde se puede crear nuevas ramas pero no hacer modificaciones en esta.
 
-# CLI
+## CLI
 Git funciona a través de comandos que se ingresan en una 'interfaz de línea de comandos', traducido del inglés 'Command Line Interface' abreviado como 'CLI' el cual maneja el intérprete de órdenes 'Bash'.
 
-# Ciclo de trabajo
+## Ciclo de trabajo
 El ciclo de trabajo de git se le demonina "working directory", directorio de trabajo en español.
 En este ciclo se conocen 2 fases:
 - La primera fase se le conoce como "work area" o "workspace" que traducido es área de trabajo. Aqué se crean todos los nuevos archivos o tambien las modificaciones de los archivos existentes.
@@ -17,69 +19,208 @@ Luego de realizar todos los cambios deseados pasamos los repositorios, el primer
 -  El repositorio local, que es donde se guarda definitivamente todos los cambios realizados en la máquina del usuario.
 -  El repositorio remoto es donde se suben los archivos del repositorio local a un servicio en la nube como github, gitlab o bitbucket a través de internet.
 
-![imagen](imagenes/ciclo-git.jpg)
+A continuación un gráfico de ciclo de trabajo en git:
+![imagen](imagenes/Grafico_Ciclo_Git.jpg)
 
-# ¿Cómo iniciar el control de versiones?
-Para iniciar el control de versiones se debe acceder a la carpeta o directorio donde se desee comenzar a utilizar este sistema y luego utilizar los comandos existentes teniendo en cuenta la funcionalidad que tiene cada uno.
+Y adicionalmente un gráfico de ciclo de trabajo de git en el repositorio local y mostrando las transacciones con el repositorio remoto:
 
-# Comandos de Git
-Todos los comandos de git siempre inician con 'git' para poder ejecutar las funcionalidades de este software.
+![Imagen](imagenes/Grafico_Ciclo_Git_Extendido.jpg)
 
-- **git init**: Para iniciar o reiniciar con el control de versiones.
+## ¿Cómo iniciar el control de versiones?
+Para iniciar a utilizar el sistema de control de versiones con el programa git se debe acceder a través de la consola o por la interfaz gráfica del sistema operativo a la carpeta o directorio donde se desee crear un nuevo repositorio y luego utilizar los comandos propios de este.
 
-- **git branch** "nombre de nueva rama": Para crear una nueva rama a partir de la rama donde se ubica actualmente el usuario, junto debe ir el nombre de la nueva rama.
+## Comandos de Git
+Todos los comandos de git siempre inician con la palabra reservada 'git' para poder ejecutar las funcionalidades de este software.
 
-- **git switch** o **checkout** "nombre de rama existente": Para cambiar entre las ramas colocando el nombre de la rama a donde se desea ir.
+**git init**: Para iniciar o reiniciar un repositorio.
 
-- **git add**: Sirve para añadir un archivo nuevo o que haya sido modificado o actualizado declarando el nombre especifico del archivo o todos los archivos con la opción "--all" o con un punto "." y el contenido agregado va al "staging area" o "area de ensayo".
-![Imagen](imagenes/git-add.jpg)
+```bash
+# - Iniciando un nuevo repositorio.
+$ git init
+Initialized empty Git repository in C:/Documents/Project/.git/
 
-- **git status**: Sirve para ver el estado de la rama donde uno se ubica y puede mostrar la información de la siguiente manera:
+# - Reiniciando un repositorio existente.
+$ git init
+Reinitialized existing Git repository in C:/Documents/Project/.git/
+```
 
-1. Cuando no hay archivos en el area de trabajo:
-        ![Imagen](imagenes/git-status/git-status-sin-archivos.png)
+**git add**: Sirve para añadir un nuevo archivo o uno que haya sido modificado. El contenido agregado va al "staging area" o "área de ensayo".
 
-2. Cuando usamos este comando después de añadir nuevos archivos en el area de trabajo los cuales no tienen seguimiento:
-        ![Imagen](imagenes/git-status/git-status-con-archivos.png)
+```bash
+# - Añadir un archivo específico.
+$ git add <file>
 
-3. Añadimos con 'git add' y visualizamos los cambios:
-        ![Imagen](imagenes/git-status/git-status-add.png)
+# - Añade todos los archivos con la opción 'all' o con el símbolo del punto '.'.
+$ git add .
+```
 
-4. Aqui visualuzamos las modificaciones:
-        ![Imagen](imagenes/git-status/git-status-file-modified.png)
+**git status**: Sirve para ver el estado de la rama donde uno se ubica y puede mostrar la información de la siguiente manera:
 
-- **git status -s**: El comando 'git status' con la opción '-s' muestra la informacion de forma abreviada.
+```bash
+# 1. Mensaje que muestra cuando no hay archivos en el area de trabajo
+$ git status
+On branch main
+nothing to commit, working tree clean
 
-1. Cuando no hay archivos en el area de trabajo:
-        ![Imagen](imagenes/git-status-opcion-S/git-status-S-sin-archivos.png)
-        - *No muestra nada y salta a la siguiente línea.*
+# 2. Esto se muestra en la consola acerca del estado que muestra después de crean nuevos archivos en el area de trabajo los cuales no tienen seguimiento.
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "Nuevo Archivo WinRAR.rar"
+        "Nuevo Documento de texto.txt"
+        "Nuevo Microsoft Access Database.accdb"
 
-2. Cuando usamos este comando después de añadir nuevos archivos en el area de trabajo los cuales no tienen seguimiento:
-        ![Imagen](imagenes/git-status-opcion-S/git-status-S-con-archivos.png)
-        - *Muestra el nombre de los archivos con los signos '??' porque no estan registrados en el directorio de trabajo de git.*
+nothing added to commit but untracked files present (use "git add" to track)
 
-3. Añadimos con 'git add' y visualizamos los cambios de forma concisa:
-        ![Imagen](imagenes/git-status-opcion-S/git-status-s-add-.png)
+# 3. Añadimos archivos con 'git add .' y visualizamos el estado.
+$ git add .
+$ git status
+On branch main
 
-4. Aqui visualuzamos las modificaciones de forma concisa:
-        ![Imagen](imagenes/git-status-opcion-S/git-status-S-file-modified.png)
+No commits yet
 
-- **git rm**: Este comando con la opción '--cached' sirve para quitar uno o mas archivos del "staging area" y regresarlos al "workspace".
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Nuevo Archivo WinRAR.rar
+        new file:   Nuevo Documento de texto.txt
+        new file:   Nuevo Microsoft Access Database.accdb
 
-- **git restore**: Con este comando podemos reestablecer las modificaciones de un archivo especificado.
+# 4. Aqui visualuzamos los archivos modificados y algunas recomendaciones
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Nuevo Documento de texto.txt
 
-- **git commit -m**: Se utiliza después de agregar nuevos archivos o también realizar los cambios en los archivos existentes.
+# 5. Aqui visualizamos los archivos borrados y que pueden ser restaurados.
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Nuevo Archivo WinRAR.rar
+```
 
-- **git reset**: Se utiliza para regresar un archivo del "staging area" o un  "commit" del repositorio al "workspace".
+**git status -s**: El comando 'git status' con la opción '-s' muestra la informacion de forma abreviada.
 
-- **git merge**: Este comando sirve para fusionar la rama seleccionada después de escribir es comando con la rama en donde nos ubicamos.
+```bash
+# 1. No muestra nada y salta a la siguiente línea cuando no hay archivos en el area de trabajo.
+$ git status -s
+$
 
-- **git push**: Con este comando podemos subir nuestros cambios del repositorio local al servidor en la nube.
+# Esto se muestra en la consola acerca del estado que muestra después de crean nuevos archivos en el area de trabajo los cuales no tienen seguimiento.
+$ git status -s
+?? "Nuevo hoja de texto.txt"
 
-- **git pull**: Realiza la función inversa de "git push". Podemos bajar los archivos del servidor en la nube a la máquina del usuario.
+# 3. Añadimos con 'git add .' y visualizamos el estado
+$ git add .
+$ git status -s
+A "Nuevo hoja de texto 2.txt"
 
-- **git log**: Muestra el registro de los commits con información detallada del autor, fecha y hora que se han realizado.
+# 4. Aqui visualuzamos las modificaciones
+$ git status -s
+M "Nuevo hoja de texto 2.txt"
 
-- **git remote**: Permite crear, ver y eliminar conexiones remotas con otros repositorios. Para crear una conexión se utilizan las opciones "add origin".
+# 5. Aqui visualizamos los archivos borrados y que pueden ser restaurados.
+$ git status -s
+D  "Nuevo Archivo WinRAR.rar"
+```
+
+**git commit**: Se utiliza después de agregar nuevos archivos o de realizar modificaciones en los archivos existentes y guardará todos los cambios hechos en el 'staging area' para que se queden en el repositorio local. Cada 'commit' debe tener un mensaje necesariamente.
+
+```bash
+# - Con la opción '-m' se puede añadir un mensaje en la misma línea sin necesidad de cambiar al editor de texto para añadirlo.
+$ git commit -m "Adding files"
+[main (root-commit) 1a5165f] Adding files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Nuevo Archivo WinRAR.rar
+ create mode 100644 Nuevo Documento de texto.txt
+ create mode 100644 Nuevo Microsoft Access Database.accdb
+```
+
+**git rm**: Este comando sirve para remover archivos y carpetas.
+
+```bash
+# - Con este comando se borra un archivo del repositorio.
+$ git rm <file>
+
+# - Usando la opción '-r' se borra el contenido de una carpeta o directorio del repositorio.
+$ git rm -r <directory>
+
+# - La opción '--cached' sirve para borrar un archivo o carpeta del repositorio pero manteniendolo en el "workspace"
+$ git rm --cached <file>
+
+# - Colocando la opción '-r' y el punto removemos todos los archivos dentro de una carpeta sin borrar esta.
+$ git rm -r .
+```
+
+**git branch**: Permite mostrar, crear, modificar o eliminar ramas.
+
+```bash
+# - Muestra una lista de todas las ramas.
+$ git branch
+
+# - Crea una rama con un nombre específico.
+$ git branch <branch_name>
+
+# - Elimina una rama
+$ git branch -d <branch_name>
+
+# - Cambiar nombre de la rama
+$ git branch <old_branch_name> <new_branch_name>
+```
+
+**git checkout**: Este comando tiene varias funcionalidades y se han creado otros comandos como **switch** y **restore** para separar la responsabilidad.
+
+**git switch**: Sirve para cambiar entre las ramas existentes colocando el nombre de la rama a donde se desea ir.
+
+```bash
+$ git switch <branch_name>
+```
+
+**git merge**: Este comando sirve para fusionar la rama seleccionada con la rama en donde nos ubicamos.
+
+```bash
+$ git merge <branch_name>
+```
+
+**git restore**: Con este comando podemos restablecer o descartan las modificaciones que se hayan realizado en el repositorio.
+
+```bash
+# - Se usa para descartan los cambios que se haya realizado en un archivo.
+$ git restore <file>
+
+# - Colocando el símbolo de punto '.' seleccionamos todos los archivos y se descartan sus cambios.
+$ git restore .
+
+# - Con la opción '--staged' se quita un archivo del "staging area".
+$ git restore --staged <file>
+```
+
+**git reset**: Se utiliza para regresar un archivo del "staging area" o un "commit" del repositorio al "workspace".
+
+**git log**: Muestra el registro de los commits con información detallada del autor, fecha y hora que se han realizado.
+
+**git remote**: Permite crear, ver y eliminar conexiones remotas con otros repositorios.
+
+```bash
+# - Para crear una conexión se utilizan las opción "add origin".
+$ git remote add origin [link url https://....git]
+
+# - Para cambiar la url del repositorio en la nube hay 2 formas:
+
+# 1. La forma sencilla es modificar directamente la URL:
+$ git remote set-url origin [updated link url https://....git]
+
+# 2. Alternativamente, la forma extensa es eliminar la URL actual y añadiendo la nueva:
+$ git remote rm origin
+$ git remote add origin [updated link https://....git]
+```
+
+**git push**: Con este comando podemos subir nuestros cambios del repositorio local al servidor en la nube.
+
+**git pull**: Realiza la función inversa de "git push". Podemos bajar los archivos del servidor en la nube a la máquina del usuario.
+
 
 > Para ver mas sobre git podemos ir la documentación oficial en : [git-scm.com](https://git-scm.com)
