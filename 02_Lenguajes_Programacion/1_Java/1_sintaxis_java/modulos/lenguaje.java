@@ -1,4 +1,6 @@
-// Parar compilar este modulo se debe ejecutar usando el nombre de la clase "javac Lenguaje.java"
+package modulo;
+
+
 public class Lenguaje {
     String nombre;
     Integer anio;
@@ -14,3 +16,5 @@ public class Lenguaje {
         System.out.println(this.nombre + " fue creado en " + this.anio);
     }
 }
+
+// Para compilar este modulo se debe ejecutar usando el nombre de la clase así: "javac Lenguaje.java"
