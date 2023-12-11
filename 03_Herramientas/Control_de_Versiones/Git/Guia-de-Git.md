@@ -250,6 +250,9 @@ $ git remote add origin [updated link https://server.com/name_user/name_project.
 **git push**: Con este comando podemos subir nuestros cambios del repositorio local al repositorio remoto alojado en un servidor / en un servicio de la nube.
 
 ```bash
+
+# Una muestra del resultado de la consola cuando usamos el comando 'git push'
+
 $ git push
 Enumerating objects: 53, done.
 Counting objects: 100% (53/53), done.
@@ -265,8 +268,35 @@ To [link url https://server.com/name_user/name_project.git]
 **git pull**: Realiza la función inversa de "git push". Con este comando descargamos los cambios que se hayan subido al servidor en la rama correspondiente.
 
 ```bash
-$ git pull
 
+# Una muestra del resultado de la consola cuando usamos el comando 'git pull' y  hay cambios en el servidor.
+
+$ git pull
+remote: Enumerating objects: 140, done.
+remote: Counting objects: 100% (140/140), done.
+remote: Compressing objects: 100% (82/82), done.
+remote: Total 106 (delta 24), reused 97 (delta 16), pack-reused 0
+Receiving objects: 100% (106/106), 1.72 MiB | 217.00 KiB/s, done.
+Resolving deltas: 100% (24/24), completed with 6 local objects.
+From [link url https://server.com/name_user/name_project]
+   87dc76a..38ae335  dev        -> origin/dev
+   87dc76a..c44a5cf  main       -> origin/main
+Updating 87dc76a..38ae335
+Fast-forward
+ .../1_Java/1_sintaxis_java/1_inicio.java           |  12 -
+ .../1_sintaxis_java/2_estrcuturas_datos.java       |  91 ++++
+ .../{6_funciones.java => 5_funciones.java}         |  96 ++--
+ .../assets/imagen.jpg                              | Bin
+ .../1_Html_Css/2_Proyectos/Website_2/img/logo.png  | Bin 8907 -> 0 bytes
+ .../2_Proyectos/Website_2/img/mockup.png           | Bin 563541 -> 0 bytes
+ .../imagenes/Lenguajes/1_Lista_lenguajes_SQL.jpg   | Bin 0 -> 192116 bytes
+ .../2_Mapa_Conceptual_Lenguajes_y_Comandos_SQL.jpg | Bin 0 -> 40337 bytes
+ .../imagenes/Lenguajes/3_Mapa_Comandos_SQL.jpg     | Bin 0 -> 83582 bytes
+ .../recursos/imagenes/Lenguajes/4_Comandos_SQL.jpg | Bin 0 -> 45557 bytes
+ 81 files changed, 912 insertions(+), 1501 deletions(-)
+ delete mode 100644 02_Lenguajes_Programacion/1_Java/1_sintaxis_java/1_inicio.java
+ create mode 100644 02_Lenguajes_Programacion/1_Java/1_sintaxis_java/1_introduccion.java
+ rename 02_Lenguajes_Programacion/1_Java/1_sintaxis_java/{6_funciones.java => 5_funciones.java} (68%)
 ```
 
 > Para ver mas sobre git podemos ir la documentación oficial en : [git-scm.com](https://git-scm.com)
