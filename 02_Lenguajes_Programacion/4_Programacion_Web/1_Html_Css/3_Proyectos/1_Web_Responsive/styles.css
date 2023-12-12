@@ -1,3 +1,5 @@
+/* Default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +15,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+/* NAV */
+
+.nav {
+    position: relative;
     background: #021222;
     height: 80px;
 }
 
-.container {
+.nav__container {
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -27,42 +32,39 @@ nav {
     z-index: 100;
 }
 
-.container-logo {
+.nav__logo {
     margin-left: 20px;
     z-index: 100;
     cursor: pointer;
 }
 
-.container-logo h2 {
+.nav__logo h1 {
     color: #95bdd8;
     font-weight: 300;
     font-size: 35px;
-    letter-spacing: 2px;
 }
 
-.container-logo h2 span {
+.nav__logo h1 span {
     color: #0590ec;
     font-weight: 700;
 }
 
-.links .link {
+.nav__links .nav__link {
     display: inline-block;
 }
 
-.links .link a {
+.nav__links .nav__link a {
     text-decoration: none;
     color: #d1faf4;
     font-size: 20px;
     margin: 0 25px;
-    letter-spacing: 3px;
-    transition: .3s;
 }
 
-.links .link a:hover {
-    color: #487abb;
+.nav__links .nav__link a:hover {
+    color: #61a6ff;
 }
 
-.toggle {
+.nav__toggle {
     color: #d1faf4;
     margin-right: 20px;
     font-size: 30px;
@@ -88,6 +90,10 @@ nav {
     grid-template-columns: repeat(2, auto);
 }
 
+.article__tittle .article__paragraph {
+    background: #021222;
+}
+
 .article__paragraph {
     margin-top: 20px;
 }
@@ -98,18 +104,21 @@ nav {
     height: 150px;
     border-radius: 50%;
     align-items: right;
+    object-fit: cover;
 }
 
 
 /* FOOTER */
 
 .footer {
+    display: flex;
+    justify-content: space-around;
     margin-top: auto;
     padding: 0;
     bottom: 0;
     width: 100%;
     color: white;
-    background-color: black;
+    background: #021222;
 }
 
 .footer__paragraf {
@@ -120,38 +129,42 @@ nav {
 
 /* MEDIA QUERYS */
 
-@media (0px < width < 549px) {
+@media (0px < width < 579px) {
     .article__section {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .nav__links {
+        width: 30%;
     }
 }
 
 
-@media (max-width: 800px){
-    .toggle {
+@media (max-width: 700px){
+    .nav__toggle {
         display: inline-block;
     }
 
-    .links {
-        position: absolute;
+    .nav__links {
+        position: fixed;
         display: flex;
         flex-direction: column;
         background: #021222;
         text-align: center;
         height: auto;
-        width: 50%;
+        width: 45%;
         z-index: 1;
         top: -100vh;
         right: 0;
         transition: .5s;
     }
 
-    .active {
+    .nav__toggle--active {
         top: 80px;
         right: 0;
     }
 
-    .links .link:hover {
+    .nav__links .nav__link:hover {
         background: #051c38;
     }
 }

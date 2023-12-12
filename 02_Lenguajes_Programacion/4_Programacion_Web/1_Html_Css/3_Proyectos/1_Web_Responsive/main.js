@@ -1,7 +1,6 @@
-const toggle = document.querySelector('.toggle')
-const links = document.querySelector('.links')
+const toggle = document.querySelector('.nav__toggle')
+const links = document.querySelector('.nav__links')
 
 toggle.addEventListener('click', () => {
-    toggle.classList.toggle('rotate')
-    links.classList.toggle('active')
+    links.classList.toggle('nav__toggle--active')
 })
