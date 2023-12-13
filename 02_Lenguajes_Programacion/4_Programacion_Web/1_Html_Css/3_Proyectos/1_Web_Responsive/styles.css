@@ -90,11 +90,12 @@ body {
     grid-template-columns: repeat(2, auto);
 }
 
-.article__tittle .article__paragraph {
-    background: #021222;
+.article__tittle {
+    color: #021222;
 }
 
 .article__paragraph {
+    color: #021222;
     margin-top: 20px;
 }
 
@@ -129,7 +130,7 @@ body {
 
 /* MEDIA QUERYS */
 
-@media (0px < width < 579px) {
+@media (0px < width < 589px) {
     .article__section {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -140,7 +141,7 @@ body {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 589px){
     .nav__toggle {
         display: inline-block;
     }
@@ -152,9 +153,9 @@ body {
         background: #021222;
         text-align: center;
         height: auto;
-        width: 45%;
+        width: 40%;
         z-index: 1;
-        top: -100vh;
+        top: -120vh;
         right: 0;
         transition: .5s;
     }
