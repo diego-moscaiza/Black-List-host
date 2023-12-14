@@ -23,7 +23,7 @@ li, a {
 }
 ```
 
-Podemos llamar a los id y las clases que tienen las etiquetas HTML.
+También podemos modificar los estilos llamando a los selectores de id y de clase, estos deben estar definidos en las etiquetas HTML para realizarlo.
 
 ```css
 .clase {
