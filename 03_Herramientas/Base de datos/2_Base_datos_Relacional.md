@@ -1,16 +1,39 @@
-# Sintaxis SQL
-- La sintaxis de SQL tiene una estrucutra definida que permiten la creación, la lectura, la actualización y la eliminación en la base de datos, la cual está compuesta de tablas. 
-- Una tabla está formada por:
-  - Filas: Las filas se encuentra la información ingresada.
-  - Columnas: Las columnas están definidas por declaración de atributos con su tipo de dato para numéricos como *int*, *decimal* o para cadenas de texto como *varchar*, *char* y la cantidad de caractéres que contenerá.
+# Base de datos relacional
 
-<br>
+Una base de datos relacional se crea con sentencias SQL y esta tiene una palabras reservadas definidas que permiten la creación, la lectura, la actualización y la eliminación de información.
 
-- Este lenguaje se divide en subconjuntos de lenguajes que se relacionan con acciones: Lenguaje de manipulación de datos (DML), Lenguaje de consulta de datos (DQL), Lenguaje de definición de datos (DDL), Lenguajde de control de datos (DCL), Lenguajde de control de transacciones (TCL). 
+## Tablas
 
-<br>
+Dentro de la base de datos se deben crear tablas las cuales están conformadas por filas y columnas
 
-- Además de las acciones que tienen estos lenguajes hay otras palabras propias del lenguaje que tiene otras funciones como:
+En las filas se encuentra campos donde se puede ingresar y manipular datos. También se les puede dejar vacíos.
+
+Las columnas son creadas cuando se definen los atributos de la tabla con su tipo de dato que puede ser numérico, de caractér unico o una cadena de texto.
+
+Columna A | Columna B | Columna C
+----------|-----------|----------
+ Dato A1  | Dato B1   | Dato C1
+ Dato A2  | 123578    |
+ Dato A3  |           | M
+
+## Lenguajes dentro de SQL
+
+El lenguaje SQL se divide en subconjuntos de lenguajes los cuales tienen varias acciones.
+
+Lenguaje de manipulación de datos (DML)
+
+Lenguaje de consulta de datos (DQL)
+
+Lenguaje de definición de datos (DDL)
+
+Lenguajde de control de datos (DCL)
+
+Lenguajde de control de transacciones (TCL)
+
+
+## Consultas o Sentencias de SQL
+
+Además hay palabras reservadas y uso de símbolos en SQL que tiene otras funciones como:
   -  Los *'alias'* para dar un nombre temporal a una tabla o a algún campo de esta.
   -  Los *'group by'* para agrupar por alguna regla.
   -  Los *'order by'* para ordenar por alguna regla como puede ser de numeros del menor a mayor o viceversa o por orden alfabético.
@@ -18,9 +41,11 @@
   -  Los *operadores comparativos* para comparaciones como '<', '>', '=', '<=', '>=', '<>'.
   -  Los *operadores lógicos* como AND, OR, NOT que significan 'conjunción', 'disyunción' y 'negación'.
   -  Los *operadores aritméticos* para realizar operaciones como suma, resta, multiplicación y división.
-  -  . 
 
-## Consultas o Sentencias de SQL
+
+## Creación de una base de datos relacional
+
+- Usando las sentencias en SQL se puede crear la base de datos relacional y dentro de ellas las tablas con sus atributos.
 
 ### 1. Consulta para crear una base de datos y al costado su respectivo nombre.
 
