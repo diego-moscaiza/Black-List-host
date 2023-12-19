@@ -1,5 +1,7 @@
 # Base de datos relacional
 
+## Creación de una base de datos relacional
+
 Una base de datos relacional se crea con sentencias SQL y esta tiene una palabras reservadas definidas que permiten la creación, la lectura, la actualización y la eliminación de información.
 
 ## Tablas
@@ -20,15 +22,11 @@ Columna A | Columna B | Columna C
 
 El lenguaje SQL se divide en subconjuntos de lenguajes los cuales tienen varias acciones.
 
-Lenguaje de manipulación de datos (DML)
-
-Lenguaje de consulta de datos (DQL)
-
-Lenguaje de definición de datos (DDL)
-
-Lenguajde de control de datos (DCL)
-
-Lenguajde de control de transacciones (TCL)
+- Lenguaje de manipulación de datos (DML)
+- Lenguaje de consulta de datos (DQL)
+- Lenguaje de definición de datos (DDL)
+- Lenguajde de control de datos (DCL)
+- Lenguajde de control de transacciones (TCL)
 
 
 ## Consultas o Sentencias de SQL
@@ -41,6 +39,10 @@ Además hay palabras reservadas y uso de símbolos en SQL que tiene otras funcio
   -  Los *operadores comparativos* para comparaciones como '<', '>', '=', '<=', '>=', '<>'.
   -  Los *operadores lógicos* como AND, OR, NOT que significan 'conjunción', 'disyunción' y 'negación'.
   -  Los *operadores aritméticos* para realizar operaciones como suma, resta, multiplicación y división.
+
+**A continuación se muestra un mapa mental sobre las consultas o sentencias usadas en SQL:**
+
+![Grafica de SQL](recursos/imagenes/Ramificacion_SQL.jpg)
 
 
 ## Creación de una base de datos relacional
