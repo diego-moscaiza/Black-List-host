@@ -193,3 +193,20 @@ Funcion("Hola Mundo")
 
 # Salida: Hola Mundo
 ```
+
+## 8. Clases
+
+Una clase es una entidad que contiene atributos y métodos, odicho de otra forma datos y funciones que representas conceptos de la vida real y que puede ser empleados para crear  en programación objetos que contengan información de usuarios, noticias, categorías, partidas, imágenes, mensajes, etc. Una vez creada una clase, los objetos que se crean a partir de estas son llamadas instancias.
+
+```javascript
+// Ejemplo de una clase en JavaScript.
+
+class Person {
+  constructor(name, surname) {
+    this.name = name;
+    this.surname = surname;
+  }
+}
+
+const man = new Person("Ryan", "Ray");
+```

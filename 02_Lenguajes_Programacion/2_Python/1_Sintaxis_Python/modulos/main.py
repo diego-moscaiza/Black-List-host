@@ -5,5 +5,4 @@
 
 from modulo import restar
 
-
 restar(10, 6)
