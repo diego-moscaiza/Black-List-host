@@ -8,7 +8,7 @@ Algoritmo MatrizEstatica
 	
 	Escribir "Mostrando matriz: "
 	Escribir "        Columna 1  -  Columna 2"
-	Escribir "Fila 1:    ", Matriz[0,0], ",           ", Matriz[0,1]
-	Escribir "Fila 2:    ", Matriz[1,0], ",           ", Matriz[1,1]
+	Escribir "Fila 1:    ", Matriz[0,0], "           ", Matriz[0,1]
+	Escribir "Fila 2:    ", Matriz[1,0], "           ", Matriz[1,1]
 	
 FinAlgoritmo
