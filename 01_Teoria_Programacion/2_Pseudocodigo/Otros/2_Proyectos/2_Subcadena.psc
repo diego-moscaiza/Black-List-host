@@ -1,3 +1,5 @@
+// El Algoritmo muestra una parte de la cadena de texto desde una posicion especifica.
+
 Algoritmo Substring_Subcadena
 	Escribir "Escriba una palabra o frase: "
 	Leer cadena1

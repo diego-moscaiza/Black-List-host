@@ -5,22 +5,27 @@ Algoritmo Decimal_Binario
 	numero1 <- TRUNC(numero1)
 	cad <- ""
 	
+	Si numero1 = 0 Entonces
+		Escribir "El numero es: ", numero1
+	Fin Si
+	
+	Si numero1 < 0 Entonces
+		Escribir "No se convierten numeros negativos"
+	Fin Si
+	
 	Si numero1 > 0 Entonces
 		Mientras numero1 > 0 Hacer
-			NumeroPar <- numero1 MOD 2 = 0
-			Si numero1=0 Entonces
+			NumeroPar <- numero1 MOD 2
+			
+			Si NumeroPar = 0 Entonces
 				cad <- "0" + cad
 			SiNo
 				cad <- "1" + cad
 			Fin Si
+				
 			numero1 <- TRUNC(numero1 / 2)
 		Fin Mientras
+		
 		Escribir "El numero en binario es: ", cad
-	SiNo
-		Si numero1=0 Entonces
-			Escribir "El numero es: ", numero1 
-		SiNo
-			Escribir "No se convierten numeros negativos"
-		Fin Si
 	Fin Si
 FinAlgoritmo
