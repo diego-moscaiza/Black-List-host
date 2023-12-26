@@ -15,11 +15,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Custom properties*/
+
+:root {
+    --main-bg-color: #021222;
+    --footer-bg-color: #051c38;
+    --footer-text-color: #ffffff;
+}
+
 /* NAV */
 
 .nav {
     position: relative;
-    background: #021222;
+    background: var(--main-bg-color);
     height: 80px;
 }
 
@@ -39,33 +47,72 @@ body {
 }
 
 .nav__logo h1 {
-    color: #95bdd8;
-    font-weight: 300;
+    color: #4eb8ff;
     font-size: 35px;
-}
-
-.nav__logo h1 span {
-    color: #0590ec;
     font-weight: 700;
 }
 
-.nav__links .nav__link {
-    display: inline-block;
-}
-
-.nav__links .nav__link a {
+.nav__link {
     text-decoration: none;
     color: #d1faf4;
     font-size: 20px;
     margin: 0 25px;
 }
 
-.nav__links .nav__link a:hover {
+.nav__link:hover {
     color: #61a6ff;
 }
 
+/* Nav button*/
+
+.nav__btn__switch {
+    background: #2f71c8;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav__btn__switch::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 2px rgb(0, 0, 0, .2);
+}
+
+.nav__btn__switch.active {
+    background-color: #e5a30b;
+    color: #021222;
+
+}
+
+.nav__btn__switch.active::after {
+    right: 0;
+    left: unset;
+
+}
+
+.nav__btn__switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background: none;
+    color: #fff;
+}
+
+/*End Nav buttom*/
+
 .nav__toggle {
-    color: #d1faf4;
     margin-right: 20px;
     font-size: 30px;
     cursor: pointer;
@@ -118,8 +165,8 @@ body {
     padding: 0;
     bottom: 0;
     width: 100%;
-    color: white;
-    background: #021222;
+    background: var(--footer-bg-color);
+    color: var(--footer-text-color);
 }
 
 .footer__paragraf {
@@ -142,12 +189,14 @@ body {
 
 
 @media (max-width: 589px){
+
+    /* Nav */
     .nav__toggle {
         display: inline-block;
     }
 
     .nav__links {
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-direction: column;
         background: #021222;
@@ -163,9 +212,5 @@ body {
     .nav__toggle--active {
         top: 80px;
         right: 0;
-    }
-
-    .nav__links .nav__link:hover {
-        background: #051c38;
     }
 }
