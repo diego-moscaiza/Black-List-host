@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Una estructura en C es una colección de variables, posiblemente de diferentes tipos, bajo un mismo nombre. 
+// Una estructura en C es una colección de variables, posiblemente de diferentes tipos, bajo un mismo nombre.
 
 struct Student {
     int id;

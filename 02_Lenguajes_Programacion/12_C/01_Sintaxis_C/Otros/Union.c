@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Una unión en C es una colección de variables, de diferentes tipos, pero sólo una variable puede contener un valor a la vez. 
+// Una unión en C es una colección de variables, de diferentes tipos, pero sólo una variable puede contener un valor a la vez.
 
 union Data {
     int i;
