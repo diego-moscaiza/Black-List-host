@@ -13,3 +13,15 @@
 127.0.0.1 www.google.com
 127.0.0.1 https://www.google.com
 ```
+> En este caso se esta utilizando la dirección IP `127.0.0.1` porque realiza un bucle de retorno (loopback) al sistema.
+
+Si no deseas usar esa dirección IP, podemos usar la dirección inválida `0.0.0.0`.
+
+
+```
+// Página de ejemplo: google.com
+
+0.0.0.0 google.com
+0.0.0.0 www.google.com
+0.0.0.0 https://www.google.com
+```
