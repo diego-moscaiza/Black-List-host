@@ -30,69 +30,72 @@
 # 0.0.0.0 https://twitter.com
 # 0.0.0.0 https://www.twitter.com
 
-# 127.-0.0.1 twitter.com
-# 127.-0.0.1 www.twitter.com
-# 127.-0.0.1 https://twitter.com
-# 127.-0.0.1 https://www.twitter.com
+# 127.0.0.1 twitter.com
+# 127.0.0.1 www.twitter.com
+# 127.0.0.1 https://twitter.com
+# 127.0.0.1 https://www.twitter.com
 
+# 0.0.0.0 reddit.com
+# 0.0.0.0 www.reddit.com
+# 0.0.0.0 https://www.reddit.com
 
 #----------BUSCADORES---------------#
 
 
-127.0.0.-1 aolsearch.com
-127.0.0.-1 www.aolsearch.com
-127.0.0.-1 https://www.aolsearch.com
-127.0.0.-1 archive.org
-127.0.0.-1 www.archive.org
-127.0.0.-1 https://www.archive.org
-127.0.0.-1 ask.com
-127.0.0.-1 www.ask.com
-127.0.0.-1 https://www.ask.com
-127.0.0.-1 baidu.com
-127.0.0.-1 www.baidu.com
-127.0.0.-1 https://www.baidu.com
-127.0.0.-1 dogpile.com
-127.0.0.-1 www.dogpile.com
-127.0.0.-1 https://www.dogpile.com
-127.0.0.-1 duckduckgo.com
-127.0.0.-1 www.duckduckgo.com
-127.0.0.-1 https://www.duckduckgo.com
-127.0.0.-1 ecosia.org
-127.0.0.-1 www.ecosia.org
-127.0.0.-1 https://www.ecosia.org
-127.0.0.-1 espanol.search.yahoo.com
-127.0.0.-1 www.espanol.search.yahoo.com
-127.0.0.-1 https://www.espanol.search.yahoo.com
-127.0.0.-1 excite.com
-127.0.0.-1 www.excite.com
-127.0.0.-1 https://www.excite.com
-127.0.0.-1 gibiru.com
-127.0.0.-1 www.gibiru.com
-127.0.0.-1 https://www.gibiru.com
-127.0.0.-1 naver.com
-127.0.0.-1 www.naver.com
-127.0.0.-1 https://www.naver.com
-127.0.0.-1 qwant.com
-127.0.0.-1 www.qwant.com
-127.0.0.-1 https://www.qwant.com
-127.0.0.-1 search.daum.net
-127.0.0.-1 www.search.daum.net
-127.0.0.-1 https://www.search.daum.net
-127.0.0.-1 search.goo.ne.jp
-127.0.0.-1 www.search.goo.ne.jp
-127.0.0.-1 https://www.search.goo.ne.jp
-127.0.0.-1 search.yahoo.com
-127.0.0.-1 www.search.yahoo.com
-127.0.0.-1 https://www.search.yahoo.com
-127.0.0.-1 seznam.cz
-127.0.0.-1 www.seznam.cz
-127.0.0.-1 https://www.seznam.cz
-127.0.0.-1 startpage.com
-127.0.0.-1 www.startpage.com
-127.0.0.-1 https://www.startpage.com
-127.0.0.-1 yandex.com
-127.0.0.-1 www.yandex.com
-127.0.0.-1 https://www.yandex.com
+0.0.0.-0 aolsearch.com
+0.0.0.-0 www.aolsearch.com
+0.0.0.-0 https://www.aolsearch.com
+0.0.0.-0 archive.org
+0.0.0.-0 www.archive.org
+0.0.0.-0 https://www.archive.org
+0.0.0.-0 ask.com
+0.0.0.-0 www.ask.com
+0.0.0.-0 https://www.ask.com
+0.0.0.-0 baidu.com
+0.0.0.-0 www.baidu.com
+0.0.0.-0 https://www.baidu.com
+0.0.0.-0 dogpile.com
+0.0.0.-0 www.dogpile.com
+0.0.0.-0 https://www.dogpile.com
+0.0.0.-0 duckduckgo.com
+0.0.0.-0 www.duckduckgo.com
+0.0.0.-0 https://www.duckduckgo.com
+0.0.0.-0 ecosia.org
+0.0.0.-0 www.ecosia.org
+0.0.0.-0 https://www.ecosia.org
+0.0.0.-0 espanol.search.yahoo.com
+0.0.0.-0 www.espanol.search.yahoo.com
+0.0.0.-0 https://www.espanol.search.yahoo.com
+0.0.0.-0 excite.com
+0.0.0.-0 www.excite.com
+0.0.0.-0 https://www.excite.com
+0.0.0.-0 gibiru.com
+0.0.0.-0 www.gibiru.com
+0.0.0.-0 https://www.gibiru.com
+0.0.0.-0 naver.com
+0.0.0.-0 www.naver.com
+0.0.0.-0 https://www.naver.com
+0.0.0.-0 qwant.com
+0.0.0.-0 www.qwant.com
+0.0.0.-0 https://www.qwant.com
+0.0.0.-0 search.daum.net
+0.0.0.-0 www.search.daum.net
+0.0.0.-0 https://www.search.daum.net
+0.0.0.-0 search.goo.ne.jp
+0.0.0.-0 www.search.goo.ne.jp
+0.0.0.-0 https://www.search.goo.ne.jp
+0.0.0.-0 search.yahoo.com
+0.0.0.-0 www.search.yahoo.com
+0.0.0.-0 https://www.search.yahoo.com
+0.0.0.-0 seznam.cz
+0.0.0.-0 www.seznam.cz
+0.0.0.-0 https://www.seznam.cz
+0.0.0.-0 startpage.com
+0.0.0.-0 www.startpage.com
+0.0.0.-0 https://www.startpage.com
+0.0.0.-0 yandex.com
+0.0.0.-0 www.yandex.com
+0.0.0.-0 https://www.yandex.com
 
 
 
@@ -100,29 +103,51 @@
 #-----------JUEGOS-------------------#
 
 
-127.0.0.-1 roblox.com/discover/?referrer=roblox-player
-127.0.0.-1 www.roblox.com/discover/?referrer=roblox-player
-127.0.0.-1 https://roblox.com/discover/?referrer=roblox-player
-127.0.0.-1 https://www.roblox.com/discover/?referrer=roblox-player
-
-127.0.0.-1 roblox.com
-127.0.0.-1 www.roblox.com
-127.0.0.-1 https://roblox.com
-127.0.0.-1 https://www.roblox.com
-
-127.0.0.-1 roblox.com/games/#/
-127.0.0.-1 www.roblox.com/games/#/
-127.0.0.-1 https://roblox.com/games/#/
-127.0.0.-1 https://www.roblox.com/games/#/
-
-
-127.0.0.-1 roblox.com/discover/#/
-127.0.0.-1 www.roblox.com/discover/#/
-127.0.0.-1 https://roblox.com/discover/#/
-127.0.0.-1 https://www.roblox.com/discover/#/
+0.0.0.-0 roblox.com/discover/?referrer=roblox-player
+0.0.0.-0 www.roblox.com/discover/?referrer=roblox-player
+0.0.0.-0 https://roblox.com/discover/?referrer=roblox-player
+0.0.0.-0 https://www.roblox.com/discover/?referrer=roblox-player
+0.0.0.-0 roblox.com
+0.0.0.-0 www.roblox.com
+0.0.0.-0 https://roblox.com
+0.0.0.-0 https://www.roblox.com
+0.0.0.-0 roblox.com/games/#/
+0.0.0.-0 www.roblox.com/games/#/
+0.0.0.-0 https://roblox.com/games/#/
+0.0.0.-0 https://www.roblox.com/games/#/
+0.0.0.-0 roblox.com/discover/#/
+0.0.0.-0 www.roblox.com/discover/#/
+0.0.0.-0 https://roblox.com/discover/#/
+0.0.0.-0 https://www.roblox.com/discover/#/
 
 
 #------------------------------------#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1248,181 +1273,6 @@
 0.0.0.0 rapidshareporns.com/
 0.0.0.0 rarbg.com
 0.0.0.0 realwebwhores.com/
-0.0.0.0 reddit.com/r/Amateur
-0.0.0.0 reddit.com/r/AmateurArchives
-0.0.0.0 reddit.com/r/AnalPorn
-0.0.0.0 reddit.com/r/anilingus
-0.0.0.0 reddit.com/r/AnimatedGIF
-0.0.0.0 reddit.com/r/Asian_Fever
-0.0.0.0 reddit.com/r/AsianHotties
-0.0.0.0 reddit.com/r/AsianNSFW
-0.0.0.0 reddit.com/r/AsianPorn
-0.0.0.0 reddit.com/r/ass
-0.0.0.0 reddit.com/r/asshole
-0.0.0.0 reddit.com/r/asstastic
-0.0.0.0 reddit.com/r/Bad_ass_girlfriends
-0.0.0.0 reddit.com/r/badassgirls
-0.0.0.0 reddit.com/r/bdsm
-0.0.0.0 reddit.com/r/BDSM_NoSpam
-0.0.0.0 reddit.com/r/BDSMcommunity
-0.0.0.0 reddit.com/r/BDSMerotica
-0.0.0.0 reddit.com/r/BDSMGW
-0.0.0.0 reddit.com/r/beach
-0.0.0.0 reddit.com/r/BeefFlaps
-0.0.0.0 reddit.com/r/beertits
-0.0.0.0 reddit.com/r/bigasses
-0.0.0.0 reddit.com/r/bikinibridge
-0.0.0.0 reddit.com/r/Bisexy
-0.0.0.0 reddit.com/r/Blowjobs
-0.0.0.0 reddit.com/r/boltedontits
-0.0.0.0 reddit.com/r/Bondage
-0.0.0.0 reddit.com/r/Boobies
-0.0.0.0 reddit.com/r/booty
-0.0.0.0 reddit.com/r/Bottomless_Vixens
-0.0.0.0 reddit.com/r/bustybabes
-0.0.0.0 reddit.com/r/camwhores
-0.0.0.0 reddit.com/r/chastity
-0.0.0.0 reddit.com/r/chickflixxx
-0.0.0.0 reddit.com/r/ChicksWithGuns
-0.0.0.0 reddit.com/r/ClassicPornMags
-0.0.0.0 reddit.com/r/ClopClop
-0.0.0.0 reddit.com/r/collared
-0.0.0.0 reddit.com/r/collegensfw
-0.0.0.0 reddit.com/r/collegesluts
-0.0.0.0 reddit.com/r/creampies
-0.0.0.0 reddit.com/r/Cuckold
-0.0.0.0 reddit.com/r/CuckoldPregnancy
-0.0.0.0 reddit.com/r/cumfetish
-0.0.0.0 reddit.com/r/cumonclothes
-0.0.0.0 reddit.com/r/cumshotgifs
-0.0.0.0 reddit.com/r/cumsluts
-0.0.0.0 reddit.com/r/dirtypenpals
-0.0.0.0 reddit.com/r/dirtysmall
-0.0.0.0 reddit.com/r/doppelbangher
-0.0.0.0 reddit.com/r/downblouse
-0.0.0.0 reddit.com/r/dyke
-0.0.0.0 reddit.com/r/ecchi
-0.0.0.0 reddit.com/r/EroticArt
-0.0.0.0 reddit.com/r/Exhibitionist
-0.0.0.0 reddit.com/r/facesitting
-0.0.0.0 reddit.com/r/FacialFun
-0.0.0.0 reddit.com/r/femalepov
-0.0.0.0 reddit.com/r/femalesgonewild
-0.0.0.0 reddit.com/r/Femdom
-0.0.0.0 reddit.com/r/FemdomHumiliation
-0.0.0.0 reddit.com/r/fetish
-0.0.0.0 reddit.com/r/FlashyGirls
-0.0.0.0 reddit.com/r/FootFetish
-0.0.0.0 reddit.com/r/foreskin
-0.0.0.0 reddit.com/r/futanari
-0.0.0.0 reddit.com/r/GayGifs
-0.0.0.0 reddit.com/r/gaymersgonewild
-0.0.0.0 reddit.com/r/gaynsfw
-0.0.0.0 reddit.com/r/ginger
-0.0.0.0 reddit.com/r/GirlsFinishingTheJob
-0.0.0.0 reddit.com/r/GirlsinLaceFishnets
-0.0.0.0 reddit.com/r/GirlsinStripedSocks
-0.0.0.0 reddit.com/r/GirlsinTUBEsocks
-0.0.0.0 reddit.com/r/girlsinyogapants
-0.0.0.0 reddit.com/r/girlskissing
-0.0.0.0 reddit.com/r/GirlswithGlasses
-0.0.0.0 reddit.com/r/GirlswithNeonHair
-0.0.0.0 reddit.com/r/gonewild
-0.0.0.0 reddit.com/r/GoneWildCD
-0.0.0.0 reddit.com/r/gonewildflicks
-0.0.0.0 reddit.com/r/GoneWildPlus
-0.0.0.0 reddit.com/r/gonewildstories
-0.0.0.0 reddit.com/r/GoneWildTube
-0.0.0.0 reddit.com/r/Gravure
-0.0.0.0 reddit.com/r/Great_Cumshot_Pics
-0.0.0.0 reddit.com/r/grool
-0.0.0.0 reddit.com/r/HairyPussy
-0.0.0.0 reddit.com/r/hentai
-0.0.0.0 reddit.com/r/hentaibondage
-0.0.0.0 reddit.com/r/HighHeels
-0.0.0.0 reddit.com/r/homemadexxx
-0.0.0.0 reddit.com/r/Hotchickswithtattoos
-0.0.0.0 reddit.com/r/Hotwife
-0.0.0.0 reddit.com/r/Hucow
-0.0.0.0 reddit.com/r/hugeboobs
-0.0.0.0 reddit.com/r/hugenaturals
-0.0.0.0 reddit.com/r/igawyrwal
-0.0.0.0 reddit.com/r/IndianBabes
-0.0.0.0 reddit.com/r/kinky
-0.0.0.0 reddit.com/r/ladybonersgw
-0.0.0.0 reddit.com/r/LegalTeens
-0.0.0.0 reddit.com/r/legs
-0.0.0.0 reddit.com/r/leotards
-0.0.0.0 reddit.com/r/lesbians
-0.0.0.0 reddit.com/r/LGBTGoneWild
-0.0.0.0 reddit.com/r/lingerie
-0.0.0.0 reddit.com/r/lusciousladies
-0.0.0.0 reddit.com/r/manlove
-0.0.0.0 reddit.com/r/MassiveCock
-0.0.0.0 reddit.com/r/MaverickMales
-0.0.0.0 reddit.com/r/milf
-0.0.0.0 reddit.com/r/Nipples
-0.0.0.0 reddit.com/r/NoFatties
-0.0.0.0 reddit.com/r/NotSafeForNature
-0.0.0.0 reddit.com/r/nsfw
-0.0.0.0 reddit.com/r/NSFW_GIF
-0.0.0.0 reddit.com/r/nsfw_gifs
-0.0.0.0 reddit.com/r/NSFW_nospam
-0.0.0.0 reddit.com/r/nsfw_videos
-0.0.0.0 reddit.com/r/NSFW_Wallpapers
-0.0.0.0 reddit.com/r/nsfw_wtf
-0.0.0.0 reddit.com/r/nsfw2
-0.0.0.0 reddit.com/r/nsfwcosplay
-0.0.0.0 reddit.com/r/nsfwoutfits
-0.0.0.0 reddit.com/r/nsfwvideos
-0.0.0.0 reddit.com/r/nude
-0.0.0.0 reddit.com/r/O_Faces
-0.0.0.0 reddit.com/r/Objects
-0.0.0.0 reddit.com/r/OnOff
-0.0.0.0 reddit.com/r/Orgasms
-0.0.0.0 reddit.com/r/Pantyfetish
-0.0.0.0 reddit.com/r/passionpics
-0.0.0.0 reddit.com/r/passionx
-0.0.0.0 reddit.com/r/Pegging
-0.0.0.0 reddit.com/r/penis
-0.0.0.0 reddit.com/r/penismeasured
-0.0.0.0 reddit.com/r/piercing
-0.0.0.0 reddit.com/r/PokePorn
-0.0.0.0 reddit.com/r/pornvids
-0.0.0.0 reddit.com/r/POV
-0.0.0.0 reddit.com/r/pregnant
-0.0.0.0 reddit.com/r/PunkGirls
-0.0.0.0 reddit.com/r/randomsexiness
-0.0.0.0 reddit.com/r/RealGirls
-0.0.0.0 reddit.com/r/realolderwomen
-0.0.0.0 reddit.com/r/redheads
-0.0.0.0 reddit.com/r/rule34
-0.0.0.0 reddit.com/r/Saggy
-0.0.0.0 reddit.com/r/SceneGirls
-0.0.0.0 reddit.com/r/sex_magick
-0.0.0.0 reddit.com/r/SexyButNotPorn
-0.0.0.0 reddit.com/r/sexystories
-0.0.0.0 reddit.com/r/ShinyPorn
-0.0.0.0 reddit.com/r/Sissies
-0.0.0.0 reddit.com/r/Smokin
-0.0.0.0 reddit.com/r/stockings
-0.0.0.0 reddit.com/r/TeaseMePleaseMe
-0.0.0.0 reddit.com/r/Tgirls
-0.0.0.0 reddit.com/r/thebackdoor
-0.0.0.0 reddit.com/r/thegap
-0.0.0.0 reddit.com/r/thick
-0.0.0.0 reddit.com/r/thinspo
-0.0.0.0 reddit.com/r/tinydick
-0.0.0.0 reddit.com/r/treesgonewild
-0.0.0.0 reddit.com/r/Unashamed
-0.0.0.0 reddit.com/r/Upskirt
-0.0.0.0 reddit.com/r/vagina
-0.0.0.0 reddit.com/r/VintageBabes
-0.0.0.0 reddit.com/r/voluptuous
-0.0.0.0 reddit.com/r/Waif
-0.0.0.0 reddit.com/r/WomenOfColor
-0.0.0.0 reddit.com/r/WomenOfColour
-0.0.0.0 reddit.com/r/yiff
 0.0.0.0 refer.ccbill.com/cgi-bin/clicks.cgi?CA=944428-0000&PA=2440339
 0.0.0.0 regretfulmorning.com/category/girls-2/
 0.0.0.0 ro89.com/q/fingered_public
@@ -2178,7 +2028,7 @@
 0.0.0.0 www.porntubese.com
 0.0.0.0 www.pornturbo.xxx/en/
 0.0.0.0 www.porn-w.org/
-0.0.0.0 www.pornwall.com/#/All_Categories/1/most-recent
+0.0.0.0 www.pornwall.com/
 0.0.0.0 www.pornwoo.com
 0.0.0.0 www.pornyeah.com/
 0.0.0.0 www.portalporno.es/
@@ -2213,16 +2063,6 @@
 0.0.0.0 www.rawtube.com/
 0.0.0.0 www.realteengirls.org
 0.0.0.0 www.redchilitube.com/
-0.0.0.0 www.reddit.com/r/ass
-0.0.0.0 www.reddit.com/r/Boobies
-0.0.0.0 www.reddit.com/r/ginger
-0.0.0.0 www.reddit.com/r/gonewild
-0.0.0.0 www.reddit.com/r/grool/
-0.0.0.0 www.reddit.com/r/LegalTeens/
-0.0.0.0 www.reddit.com/r/nsfw/
-0.0.0.0 www.reddit.com/r/RealGirls
-0.0.0.0 www.reddit.com/r/wet
-0.0.0.0 www.reddit.com/static/button/button3.js
 0.0.0.0 www.redtube.com/
 0.0.0.0 www.richardsonmag.com/
 0.0.0.0 www.rk.com/enter.htm?id=lgldp
@@ -3278,8 +3118,6 @@
 0.0.0.0 www.quenovias.com
 0.0.0.0 www.quezorras.com
 0.0.0.0 www.rawtube.com
-0.0.0.0 www.reddit.com/r/grool
-0.0.0.0 www.reddit.com/r/LegalTeens
 0.0.0.0 www.richardsonmag.com
 0.0.0.0 www.rosebuttboard.com
 0.0.0.0 www.roundandbrown.com
@@ -6683,9 +6521,6 @@
 0.0.0.0 www.flirtbengimahpornstar.blogspot.com
 0.0.0.0 https://flirtbengimahpornstar.blogspot.com
 0.0.0.0 https://www.flirtbengimahpornstar.blogspot.com
-0.0.0.0 reddit.com
-0.0.0.0 www.reddit.com
-0.0.0.0 https://www.reddit.com
 0.0.0.0 yvvno.shewantyou.com
 0.0.0.0 www.yvvno.shewantyou.com
 0.0.0.0 https://yvvno.shewantyou.com
@@ -7149,32 +6984,32 @@
 0.0.0.0 www.animeblix.com
 0.0.0.0 https://animeblix.com
 0.0.0.0 animefenix.com
-0.0.0.0 www.www.animefenix.com
+0.0.0.0 www.animefenix.com
 0.0.0.0 https://www.animefenix.com
 0.0.0.0 anime-planet.com
-0.0.0.0 www.www.anime-planet.com
+0.0.0.0 www.anime-planet.com
 0.0.0.0 https://www.anime-planet.com
 0.0.0.0 animeyt.es
 0.0.0.0 www.animeyt.es
 0.0.0.0 https://animeyt.es
 0.0.0.0 asiancrush.com
-0.0.0.0 www.www.asiancrush.com
+0.0.0.0 www.asiancrush.com
 0.0.0.0 https://www.asiancrush.com
 0.0.0.0 contv.com
-0.0.0.0 www.www.contv.com
+0.0.0.0 www.contv.com
 0.0.0.0 https://www.contv.com
 0.0.0.0 crunchyroll.com
-0.0.0.0 www.www.crunchyroll.com
+0.0.0.0 www.crunchyroll.com
 0.0.0.0 https://www.crunchyroll.com
 0.0.0.0 filmaffinity.com
-0.0.0.0 www.www.filmaffinity.com
+0.0.0.0 www.filmaffinity.com
 0.0.0.0 https://www.filmaffinity.com
 0.0.0.0 https://hentaijk.com
 0.0.0.0 hentaini.com
 0.0.0.0 www.hentaini.com
 0.0.0.0 https://hentaini.com
 0.0.0.0 hidive.com
-0.0.0.0 www.www.hidive.com
+0.0.0.0 www.hidive.com
 0.0.0.0 https://www.hidive.com
 0.0.0.0 holanime.net
 0.0.0.0 www.holanime.net
@@ -7194,10 +7029,10 @@
 0.0.0.0 www.mundomangakun.com.br
 0.0.0.0 https://mundomangakun.com.br
 0.0.0.0 niceoppai.net
-0.0.0.0 www.www.niceoppai.net
+0.0.0.0 www.niceoppai.net
 0.0.0.0 https://www.niceoppai.net
 0.0.0.0 senpai.com.mx
-0.0.0.0 www.www.senpai.com.mx
+0.0.0.0 www.senpai.com.mx
 0.0.0.0 https://www.senpai.com.mx
 0.0.0.0 tdgall.com
 0.0.0.0 www.tdgall.com
@@ -7206,7 +7041,7 @@
 0.0.0.0 www.tuanimeligero.net
 0.0.0.0 https://tuanimeligero.net
 0.0.0.0 tuhmh.com
-0.0.0.0 www.www.tuhmh.com
+0.0.0.0 www.tuhmh.com
 0.0.0.0 https://www.tuhmh.com
 0.0.0.0 waaboom.com
 0.0.0.0 www.waaboom.com
@@ -7215,7 +7050,7 @@
 0.0.0.0 www.webmangaplus.com
 0.0.0.0 https://webmangaplus.com
 0.0.0.0 webmota.com
-0.0.0.0 www.www.webmota.com
+0.0.0.0 www.webmota.com
 0.0.0.0 https://www.webmota.com
 0.0.0.0 ww.kiss-anime.ws
 0.0.0.0 www.ww.kiss-anime.ws
@@ -7223,14 +7058,17 @@
 0.0.0.0 www1.animeonline.ninja
 0.0.0.0 www.www1.animeonline.ninja
 0.0.0.0 https://www1.animeonline.ninja
-0.0.0.0 www3.animeflv.net
-0.0.0.0 www.www3.animeflv.net
-0.0.0.0 https://www3.animeflv.net
+# 0.0.0.0 www3.animeflv.net
+# 0.0.0.0 www.www3.animeflv.net
+# 0.0.0.0 https://www3.animeflv.net
+# 0.0.0.0 animeflv.one
+# 0.0.0.0 www.animeflv.one
+# 0.0.0.0 https://www.animeflv.one
 0.0.0.0 xxxtop.org
 0.0.0.0 www.xxxtop.org
 0.0.0.0 https://xxxtop.org
 0.0.0.0 yeosin.day
-0.0.0.0 www.www.yeosin.day
+0.0.0.0 www.yeosin.day
 0.0.0.0 https://www.yeosin.day
 0.0.0.0 ytanime.tv
 0.0.0.0 www.ytanime.tv
@@ -7242,7 +7080,7 @@
 0.0.0.0 9ymh.com
 0.0.0.0 www.9ymh.com
 0.0.0.0 https://www.9ymh.com
-0.0.0.0 https://www.www.9ymh.com
+0.0.0.0 https://www.9ymh.com
 0.0.0.0 agroenzimi.blogspot.com
 0.0.0.0 www.agroenzimi.blogspot.com
 0.0.0.0 https://agroenzimi.blogspot.com
@@ -7252,11 +7090,11 @@
 0.0.0.0 https://animecenterbr.com
 0.0.0.0 https://www.animecenterbr.com
 0.0.0.0 https://www.animecharactersdatabase.com
-0.0.0.0 https://www.www.animecharactersdatabase.com
+0.0.0.0 https://www.animecharactersdatabase.com
 0.0.0.0 animefagos.com
 0.0.0.0 www.animefagos.com
 0.0.0.0 https://www.animefagos.com
-0.0.0.0 https://www.www.animefagos.com
+0.0.0.0 https://www.animefagos.com
 0.0.0.0 animeheaven.de
 0.0.0.0 www.animeheaven.de
 0.0.0.0 https://animeheaven.de
@@ -7264,11 +7102,11 @@
 0.0.0.0 animeyoko.com
 0.0.0.0 www.animeyoko.com
 0.0.0.0 https://www.animeyoko.com
-0.0.0.0 https://www.www.animeyoko.com
+0.0.0.0 https://www.animeyoko.com
 0.0.0.0 area76.com
-0.0.0.0 www.www.area76.com
+0.0.0.0 www.area76.com
 0.0.0.0 http://www.area76.com
-0.0.0.0 http://www.www.area76.com
+0.0.0.0 http://www.area76.com
 0.0.0.0 https://www.bwhanman.com
 0.0.0.0 dootoon18.com
 0.0.0.0 www.dootoon18.com
@@ -7277,7 +7115,7 @@
 0.0.0.0 feixuemh.com
 0.0.0.0 www.feixuemh.com
 0.0.0.0 https://www.feixuemh.com
-0.0.0.0 https://www.www.feixuemh.com
+0.0.0.0 https://www.feixuemh.com
 0.0.0.0 freewebtooncoins.com
 0.0.0.0 www.freewebtooncoins.com
 0.0.0.0 https://freewebtooncoins.com
@@ -7289,13 +7127,19 @@
 0.0.0.0 https://hero.fandom.com
 0.0.0.0 https://www.hero.fandom.com
 0.0.0.0 htzqkh.com
-0.0.0.0 www.www.htzqkh.com
+0.0.0.0 www.htzqkh.com
+0.0.0.0 http://.htzqkh.com
 0.0.0.0 http://www.htzqkh.com
-0.0.0.0 http://www.www.htzqkh.com
+
+0.0.0.0 ihentai.bio
+0.0.0.0 www.ihentai.bio
+0.0.0.0 https://ihentai.bio
+0.0.0.0 https://www.ihentai.bio
+
 0.0.0.0 ikhmw.com
 0.0.0.0 www.ikhmw.com
 0.0.0.0 https://www.ikhmw.com
-0.0.0.0 https://www.www.ikhmw.com
+0.0.0.0 https://www.ikhmw.com
 0.0.0.0 ilovemanhwa.com
 0.0.0.0 www.ilovemanhwa.com
 0.0.0.0 https://ilovemanhwa.com
@@ -7347,7 +7191,7 @@
 0.0.0.0 https://mangasiro.com
 0.0.0.0 https://www.mangasiro.com
 0.0.0.0 www.mangathailand.com
-0.0.0.0 https://www.www.mangatigre.com
+0.0.0.0 https://www.mangatigre.com
 0.0.0.0 mangauptocats.net
 0.0.0.0 www.mangauptocats.net
 0.0.0.0 https://mangauptocats.net
@@ -7363,7 +7207,7 @@
 0.0.0.0 manhuazhen.com
 0.0.0.0 www.manhuazhen.com
 0.0.0.0 https://www.manhuazhen.com
-0.0.0.0 https://www.www.manhuazhen.com
+0.0.0.0 https://www.manhuazhen.com
 0.0.0.0 https://www.manhwa18.net
 0.0.0.0 manhwa365.com
 0.0.0.0 www.manhwa365.com
@@ -7405,9 +7249,9 @@
 0.0.0.0 http://naver3.com
 0.0.0.0 http://www.naver3.com
 0.0.0.0 https://www.otakuteca.com
-0.0.0.0 www.www.piggymanga.com
+0.0.0.0 www.piggymanga.com
 0.0.0.0 http://www.piggymanga.com
-0.0.0.0 http://www.www.piggymanga.com
+0.0.0.0 http://www.piggymanga.com
 0.0.0.0 rawdex.net
 0.0.0.0 www.rawdex.net
 0.0.0.0 https://rawdex.net
@@ -7416,7 +7260,7 @@
 0.0.0.0 scan-manga.com
 0.0.0.0 www.scan-manga.com
 0.0.0.0 https://www.scan-manga.com
-0.0.0.0 https://www.www.scan-manga.com
+0.0.0.0 https://www.scan-manga.com
 0.0.0.0 twilightscans.com
 0.0.0.0 www.twilightscans.com
 0.0.0.0 https://twilightscans.com
@@ -7428,7 +7272,7 @@
 0.0.0.0 wetrend.co.kr
 0.0.0.0 www.wetrend.co.kr
 0.0.0.0 https://www.wetrend.co.kr
-0.0.0.0 https://www.www.wetrend.co.kr
+0.0.0.0 https://www.wetrend.co.kr
 0.0.0.0 x2manga.com
 0.0.0.0 www.x2manga.com
 0.0.0.0 https://x2manga.com
@@ -7454,9 +7298,6 @@
 0.0.0.0 https://www.7dak.com
 0.0.0.0 https://www.animastervenezuelav5.blogspot.com
 0.0.0.0 https://www.animeblix.com
-0.0.0.0 animeflv.one
-0.0.0.0 www.animeflv.one
-0.0.0.0 https://www.animeflv.one
 0.0.0.0 animeonline.biz
 0.0.0.0 www.animeonline.biz
 0.0.0.0 https://www.animeonline.biz
@@ -7494,9 +7335,6 @@
 0.0.0.0 crazyporn.xxx
 0.0.0.0 www.crazyporn.xxx
 0.0.0.0 https://www.crazyporn.xxx
-0.0.0.0 creative.xlivrdr.com
-0.0.0.0 www.creative.xlivrdr.com
-0.0.0.0 https://www.creative.xlivrdr.com
 0.0.0.0 https://www.crprt.livejasmin.com
 0.0.0.0 darknessporn.com
 0.0.0.0 www.darknessporn.com
@@ -7830,36 +7668,36 @@
 0.0.0.0 www.zbporn.com
 0.0.0.0 https://www.zbporn.com
 0.0.0.0 https://www.zenkimex.com.mx
-1270.0.0.1 descargamangats.blogspot.com
-1270.0.0.1 www.descargamangats.blogspot.com
-1270.0.0.1 https://www.descargamangats.blogspot.com
-1270.0.0.1 freewebtooncoins.com
-1270.0.0.1 www.freewebtooncoins.com
-1270.0.0.1 https://www.freewebtooncoins.com
-1270.0.0.1 kumotran.com
-1270.0.0.1 www.kumotran.com
-1270.0.0.1 https://www.kumotran.com
-1270.0.0.1 lezlynorman.com
-1270.0.0.1 www.lezlynorman.com
-1270.0.0.1 https://www.lezlynorman.com
-1270.0.0.1 manchacomic.es
-1270.0.0.1 www.manchacomic.es
-1270.0.0.1 https://www.manchacomic.es
-1270.0.0.1 manhwa18.cc
-1270.0.0.1 www.manhwa18.cc
-1270.0.0.1 https://www.manhwa18.cc
-1270.0.0.1 manhwa68.com
-1270.0.0.1 www.manhwa68.com
-1270.0.0.1 https://www.manhwa68.com
-1270.0.0.1 ramenparados.com
-1270.0.0.1 www.ramenparados.com
-1270.0.0.1 https://www.ramenparados.com
-1270.0.0.1 thaitoon.net
-1270.0.0.1 www.thaitoon.net
-1270.0.0.1 https://www.thaitoon.net
-1270.0.0.1 toongod.com
-1270.0.0.1 www.toongod.com
-1270.0.0.1 https://www.toongod.com
+0.0.0.1 descargamangats.blogspot.com
+0.0.0.1 www.descargamangats.blogspot.com
+0.0.0.1 https://www.descargamangats.blogspot.com
+0.0.0.1 freewebtooncoins.com
+0.0.0.1 www.freewebtooncoins.com
+0.0.0.1 https://www.freewebtooncoins.com
+0.0.0.1 kumotran.com
+0.0.0.1 www.kumotran.com
+0.0.0.1 https://www.kumotran.com
+0.0.0.1 lezlynorman.com
+0.0.0.1 www.lezlynorman.com
+0.0.0.1 https://www.lezlynorman.com
+0.0.0.1 manchacomic.es
+0.0.0.1 www.manchacomic.es
+0.0.0.1 https://www.manchacomic.es
+0.0.0.1 manhwa18.cc
+0.0.0.1 www.manhwa18.cc
+0.0.0.1 https://www.manhwa18.cc
+0.0.0.1 manhwa68.com
+0.0.0.1 www.manhwa68.com
+0.0.0.1 https://www.manhwa68.com
+0.0.0.1 ramenparados.com
+0.0.0.1 www.ramenparados.com
+0.0.0.1 https://www.ramenparados.com
+0.0.0.1 thaitoon.net
+0.0.0.1 www.thaitoon.net
+0.0.0.1 https://www.thaitoon.net
+0.0.0.1 toongod.com
+0.0.0.1 www.toongod.com
+0.0.0.1 https://www.toongod.com
 0.0.0.0 1stkissmanga.io
 0.0.0.0 www.1stkissmanga.io
 0.0.0.0 https://1stkissmanga.io
@@ -8045,6 +7883,9 @@
 0.0.0.0 www.go.xlivrdr.com
 0.0.0.0 https://go.xlivrdr.com
 0.0.0.0 https://www.go.xlivrdr.com
+0.0.0.0 creative.xlivrdr.com
+0.0.0.0 www.creative.xlivrdr.com
+0.0.0.0 https://www.creative.xlivrdr.com
 0.0.0.0 godpvqnszo.com
 0.0.0.0 www.godpvqnszo.com
 0.0.0.0 https://godpvqnszo.com
@@ -8195,19 +8036,19 @@
 0.0.0.0 https://webtoon.uk
 0.0.0.0 https://www.webtoon.uk
 0.0.0.0 www.artstation.com
-0.0.0.0 www.www.artstation.com
+0.0.0.0 www.artstation.com
 0.0.0.0 https://www.artstation.com
-0.0.0.0 https://www.www.artstation.com
+0.0.0.0 https://www.artstation.com
 0.0.0.0 www.kaskus.co.id
-0.0.0.0 www.www.kaskus.co.id
+0.0.0.0 www.kaskus.co.id
 0.0.0.0 https://www.kaskus.co.id
-0.0.0.0 https://www.www.kaskus.co.id
+0.0.0.0 https://www.kaskus.co.id
 0.0.0.0 www.univision.com
-0.0.0.0 www.www.univision.com
+0.0.0.0 www.univision.com
 0.0.0.0 https://www.univision.com
-0.0.0.0 https://www.www.univision.com
-0.0.0.0 www.www.webnovel.com
-0.0.0.0 https://www.www.webnovel.com
+0.0.0.0 https://www.univision.com
+0.0.0.0 www.webnovel.com
+0.0.0.0 https://www.webnovel.com
 0.0.0.0 yuri.live
 0.0.0.0 www.yuri.live
 0.0.0.0 https://yuri.live
@@ -9104,6 +8945,10 @@
 0.0.0.0 www.extremematuresex.org
 0.0.0.0 http://extremematuresex.org
 0.0.0.0 http://www.extremematuresex.org
+0.0.0.0 verhentai.com
+0.0.0.0 www.verhentai.com
+0.0.0.0 https://verhentai.com
+0.0.0.0 https://www.verhentai.com
 0.0.0.0 firepornz.com
 0.0.0.0 www.firepornz.com
 0.0.0.0 https://firepornz.com
@@ -9223,6 +9068,42 @@
 0.0.0.0 www.sexvideos-xxx.com
 0.0.0.0 https://sexvideos-xxx.com
 0.0.0.0 https://www.sexvideos-xxx.com
+0.0.0.0 anime-indy.com
+0.0.0.0 www.anime-indy.com
+0.0.0.0 https://anime-indy.com
+0.0.0.0 https://www.anime-indy.com
+0.0.0.0 animenari.com
+0.0.0.0 www.animenari.com
+0.0.0.0 https://animenari.com
+0.0.0.0 https://www.animenari.com
+0.0.0.0 hanime.su
+0.0.0.0 www.hanime.su
+0.0.0.0 https://hanime.su
+0.0.0.0 https://www.hanime.su
+0.0.0.0 hentai69.top
+0.0.0.0 www.hentai69.top
+0.0.0.0 https://hentai69.top
+0.0.0.0 https://www.hentai69.top
+0.0.0.0 hentaiheart.com
+0.0.0.0 www.hentaiheart.com
+0.0.0.0 https://hentaiheart.com
+0.0.0.0 https://www.hentaiheart.com
+0.0.0.0 hentaiovas.com
+0.0.0.0 www.hentaiovas.com
+0.0.0.0 https://hentaiovas.com
+0.0.0.0 https://www.hentaiovas.com
+0.0.0.0 hentairoshi.com
+0.0.0.0 www.hentairoshi.com
+0.0.0.0 https://hentairoshi.com
+0.0.0.0 https://www.hentairoshi.com
+0.0.0.0 henvids.com
+0.0.0.0 www.henvids.com
+0.0.0.0 https://henvids.com
+0.0.0.0 https://www.henvids.com
+0.0.0.0 nhentai.online
+0.0.0.0 www.nhentai.online
+0.0.0.0 https://nhentai.online
+0.0.0.0 https://www.nhentai.online
 0.0.0.0 sex-xxx.rest
 0.0.0.0 www.sex-xxx.rest
 0.0.0.0 https://sex-xxx.rest
@@ -9686,7 +9567,7 @@
 0.0.0.0 https://vermanhwa.es
 0.0.0.0 https://www.https://vermanhwa.es
 0.0.0.0 www.goodreads.com
-0.0.0.0 www.www.goodreads.com
+0.0.0.0 www.goodreads.com
 0.0.0.0 https://www.goodreads.com
 0.0.0.0 https://www.https://www.goodreads.com
 0.0.0.0 ygosu.com
@@ -11154,9 +11035,9 @@
 0.0.0.0 https://mangatoon.mobi
 0.0.0.0 https://www.mangatoon.mobi
 0.0.0.0 myxxgirl.com
-0.0.0.0 www.www.myxxgirl.com
+0.0.0.0 www.myxxgirl.com
 0.0.0.0 https://myxxgirl.com
-0.0.0.0 https://www.www.myxxgirl.com
+0.0.0.0 https://www.myxxgirl.com
 0.0.0.0 nudeindians.net
 0.0.0.0 www.nudeindians.net
 0.0.0.0 https://nudeindians.net
@@ -11377,7 +11258,7 @@
 0.0.0.0 https://92um.cc
 0.0.0.0 https://www.92um.cc
 0.0.0.0 9mqz.com
-0.0.0.0 www.www.9mqz.com
+0.0.0.0 www.9mqz.com
 0.0.0.0 https://9mqz.com
 0.0.0.0 https://www.9mqz.com
 0.0.0.0 animeplanetfree.blogspot.com
@@ -11429,7 +11310,7 @@
 0.0.0.0 wwmh.online
 0.0.0.0 https://wwmh.online
 0.0.0.0 www.hanmant.com
-0.0.0.0 www.www.hanmant.com
+0.0.0.0 www.hanmant.com
 0.0.0.0 https://hanmant.com
 0.0.0.0 https://www.hanmant.com
 0.0.0.0 apollcomics.es
