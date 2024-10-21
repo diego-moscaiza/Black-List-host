@@ -159,8 +159,6 @@
 
 
 
-
-
 #------------------------------------#
 
 
@@ -5836,6 +5834,22 @@
 0.0.0.0 www.mangakakalot.com
 0.0.0.0 batotoo.com
 0.0.0.0 www.batotoo.com
+0.0.0.0 cocomic.co
+0.0.0.0 www.cocomic.co
+0.0.0.0 https://cocomic.co
+0.0.0.0 https://www.cocomic.co
+0.0.0.0 ladydxb.com
+0.0.0.0 www.ladydxb.com
+0.0.0.0 https://ladydxb.com
+0.0.0.0 https://www.ladydxb.com
+0.0.0.0 manhuanext.com
+0.0.0.0 www.manhuanext.com
+0.0.0.0 https://manhuanext.com
+0.0.0.0 https://www.manhuanext.com
+0.0.0.0 marcialhub.xyz
+0.0.0.0 www.marcialhub.xyz
+0.0.0.0 https://marcialhub.xyz
+0.0.0.0 https://www.marcialhub.xyz
 0.0.0.0 1stkissmanga.io
 0.0.0.0 www.1stkissmanga.io
 0.0.0.0 zinmanga.com
